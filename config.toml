@@ -1,4 +1,6 @@
 baseURL = "https://example.com"
+themesDir = "themes"
+publishDir = "docs"
 languageCode = "en-us"
 title = "Joffreys new site"
 theme = "cactus"
