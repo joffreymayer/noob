@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Joffreys new site</title>
-    <link>https://example.com/categories/</link>
+    <link>https://joffreymayer.github.io/noob/categories/</link>
     <description>Recent content in Categories on Joffreys new site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Sun, 27 Jun 2021 09:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Jun 2021 09:00:00 +0000</lastBuildDate><atom:link href="https://joffreymayer.github.io/noob/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>tech</title>
-      <link>https://example.com/categories/tech/</link>
+      <link>https://joffreymayer.github.io/noob/categories/tech/</link>
       <pubDate>Sun, 27 Jun 2021 09:00:00 +0000</pubDate>
       
-      <guid>https://example.com/categories/tech/</guid>
+      <guid>https://joffreymayer.github.io/noob/categories/tech/</guid>
       <description></description>
     </item>
     
     <item>
       <title>notes</title>
-      <link>https://example.com/categories/notes/</link>
+      <link>https://joffreymayer.github.io/noob/categories/notes/</link>
       <pubDate>Sat, 06 Jun 2020 09:00:00 +0000</pubDate>
       
-      <guid>https://example.com/categories/notes/</guid>
+      <guid>https://joffreymayer.github.io/noob/categories/notes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>life</title>
-      <link>https://example.com/categories/life/</link>
+      <link>https://joffreymayer.github.io/noob/categories/life/</link>
       <pubDate>Sat, 22 Oct 2016 16:56:54 +0000</pubDate>
       
-      <guid>https://example.com/categories/life/</guid>
+      <guid>https://joffreymayer.github.io/noob/categories/life/</guid>
       <description></description>
     </item>
     
