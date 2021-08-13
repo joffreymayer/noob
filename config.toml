@@ -37,6 +37,11 @@ name = "CustomHTML"
 url = "CustomHTML/index.html"
 weight = 5
 
+[[menu.main]]
+name = "DataScience"
+url = "DataScience/index.html"
+weight = 6
+
 [markup]
   [markup.tableOfContents]
     endLevel = 4
