@@ -42,6 +42,11 @@ name = "DataScience"
 url = "DataScience/index.html"
 weight = 6
 
+[[menu.main]]
+name = "TestNav"
+url = "TestNav/index.html"
+weight = 7
+
 [markup]
   [markup.tableOfContents]
     endLevel = 4
