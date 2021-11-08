@@ -43,8 +43,8 @@ url = "DataScience/index.html"
 weight = 6
 
 [[menu.main]]
-name = "TestNav"
-url = "TestNav/index.html"
+name = "sbbPlotly"
+url = "sbbPlotly/index.html"
 weight = 7
 
 [markup]
