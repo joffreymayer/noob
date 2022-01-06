@@ -195,13 +195,13 @@ body {
 
 /* - Background Images for Slider - */
 .showcase:nth-child(1){
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/bg-1.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/image1.jpg) center/cover no-repeat;
 }
 .showcase:nth-child(2){
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/bg-2.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/image2.jpg) center/cover no-repeat;
 }
 .showcase:nth-child(3){
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/bg-3.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/image3.jpg) center/cover no-repeat;
 }
 
 /* - Responsiveness of Slider - */

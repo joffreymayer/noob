@@ -52,3 +52,4 @@ function slideShowcase(){
 }
 
 window.addEventListener('resize', slideShowcase); // Cool (Key to note): In order to not have errors in the Slideshow, we must re-calculate the width of the currently used decive IF it gets resized during the process!
+
