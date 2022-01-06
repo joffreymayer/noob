@@ -395,55 +395,37 @@ li > a:only-child:after { content: ''; } /* Wenn <a>-Tag das only-child ist in e
     }
 }
 
+/*** --- Start of Swiper-Styles --- ***/
 
-
-/** ------ Slider-Styling ------ **/
-
-.showcase-wrapper {
-    height: 95vh; /* Full-Screen height. */
-    position: relative; /* This is needed in order to be able to position the 3 Dots that will give a hint to the user at which slide he currently is. */
+.swiper-container {
+    height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 
-.showcase-content{ /* Styling Flex-Container. */
-    height: 100%; /* Take full-screen height. */
-    width: 100%; /* Full-screen width. */
+.swiper-wrapper {
+    position: relative;
     display: flex;
-    transition: all 0.5s ease;
 }
 
-.showcase { /* Styling Flex-Items (& Grid-Container). 
-        --> KEY: The Flex-Items will also - simultaneously - be a Grid-Container!! */
-    min-width: 100%; /* Each Flexbox-Item should have a FIXED 100% width, relative to the viewport (= borwser-fenster)!! */
-    display: grid; /* Default-Behavior: All Grid-Items become 1 column. */
-    place-items: center; /* This will be the vertical & horizontal alignment for our Grid-ITEMS WITHIN each CELL.
-
-    - Key to note 1: Since the 'place-items' can only be applied to a Grid- OR Flexbox-CONTAINER, we can conclude that this property is applied to our GRID-Container (and not to the Flexbox that we used on the 'showcase-content'-div above).
-
-    - Key to note 2: This is a Short-Cut-Writing for the following two Grid OR Flexbox CSS-properties: 
-        - 'justify-items'-property (= horizontal alignment for Flexbox)
-        - 'align-content'-property (= this is the vertical-alignment, since - by Default - we have a flex-direction of 'row' in this case.)
-    */
-    place-content: center; /* We horizontally & vertically alignment for the Flexbox- OR Grid-CONTENT. Dadurch nimmt - vor allem - der Button nicht dies gesamte Breite (= Width) der Grid-Cell an.
-
-    - Key to note 1: Since the 'place-content' can only be applied to a Grid- OR Flexbox-CONTAINER, we can conclude that this property is applied to our GRID-Container (and not to the Flexbox that we used on the 'showcase-content'-div above). 
-        - What it does? --> It will center - horizontally AND vertically - the WHOLE content of each column RELATIVE TO the whole height of the column (= e.g. both items WITHIN each of the 3 columns will be placed into the center of their corresponding grid-container). 
-
-    - Key to note 2: This is a Short-Cut-Writing for the following two Flexbox- OR Grid- CSS-properties: 
-        - 'justify-content'-property (= horizontal alignment WITHIN the flex- / grid-container)
-        - 'align-content'-property (= this is the vertical-alignment WITHIN the flex- / grid-container.)
-    */
+.swiper-container .swiper-slide {
+    background: #ccc;
+    display: grid;
+    place-items: center;
+    place-content: center;
     color: #fff;
-    text-align: center;
+    font-size: 60px;
+    min-width: 100%;
 }
 
-.showcase h1 {
+.swiper-slide h1 {
     font-size: 1.8rem;
     width: 90%;
+    text-align: center;
     margin: 1.5rem auto; /* Bringt mehr Luft zwischen Button & Titel. */
 }
 
-.showcase button {
+.swiper-slide button {
     background: transparent;
     border: 2.5px solid #fff;
     color: #fff;
@@ -455,56 +437,34 @@ li > a:only-child:after { content: ''; } /* Wenn <a>-Tag das only-child ist in e
     transition: all 0.5s ease;
 }
 
-.showcase button:hover {
-    background: #fff;
-    color: #000;
-}
-
-/* - Button-Layout for Slider - */
-.dotted-btns { /* -- Flex-Container -- */
-    position: absolute; /* We need to place the dots with absolute positioning. */
-    bottom: 2rem; /* To position our (absouletly positioned) container correctly. */
-    display: flex;
-    justify-content: center; /*Thanks to our flex-container, */
-    width: 100%;
-}
-
-.dotted-btns span {
-    margin: 0 0.5rem;
-    color: #fff;
-    font-size: 0.8rem;
-    opacity: 0.9;
-    cursor: pointer;
-    transition: opacity 0.5s ease;
-}
-
-.dotted-btns span:hover {
-    opacity: 0.7;
-}
-
-/* - Background Images for Slider - */
-.showcase:nth-child(1){
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/image1.jpg) center/cover no-repeat;
-}
-.showcase:nth-child(2){
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/image2.jpg) center/cover no-repeat;
-}
-.showcase:nth-child(3){
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/image3.jpg) center/cover no-repeat;
-}
-
 /* - Responsiveness of Slider - */
 @media screen and (min-width: 400px){
-    .showcase h1{
+    .swiper-slide h1{
         font-size: 4rem;
     }
 }
 
 @media screen and (min-width: 992px){
-    .showcase h1{
+    .swiper-slide h1{
         font-size: 5rem;
     }
-    .showcase button{
+    .swiper-slide button{
         font-size: 1.05rem;
     }
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff !important;
+}
+
+.swiper-button-prev {
+    color: #fff !important;
+}
+  
+.swiper-button-next {
+   color: #fff !important;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after { /* Hiermit legst du die Grösse der beiden Pfeile des Sliders fest. */
+    font-size: 1.3rem !important;
 }
