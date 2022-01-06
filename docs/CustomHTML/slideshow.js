@@ -1,29 +1,3 @@
-// ---- Beginn js für die Navigation ----
-
-const navShowBtn = document.querySelector('.nav-show-btn'); // Gibt eine Liste ALLER HTML-Elemente mit der Klasse '.nav-show-btn'. --> Output: das selektiert mir 1 <button>-Element mit dem Hamburger.
-const navHideBtn = document.querySelector('.nav-hide-btn'); // Gibt eine Liste ALLER HTML-Elemente mit der Klasse '.nav-hide-btn'. --> Output: das selektiert mir 1 <button>-Element mit dem Kreuz-Icon.
-const navMenu = document.querySelector('.navbar-collapse'); // --> Output: das selektiert mir das grosse Container-<div>-Element, welches zur Zeit UNSICHTBAR ist ('display: none')!
-
-// -- Make the "hidden" Navigation appear on click on the hamburger-icon:
-//
-// >> Description: What it does?
-// 1) Take the <button> with the Hamburger Icon and - on Click - call me the (nameless) function described in 2)
-// 2) Take the "hidden" Navigation (= the WHOLE <div>-container) and add the class '.showNav', which will make the navigation appear.
-navShowBtn.addEventListener('click', () => {
-    navMenu.classList.add('showNav');
-});
-
-// -- Make the "hidden" Navigation DISAPEAR on click on the Kreuz-icon:
-//
-// >> Description: What it does?
-// 1) Take the <button> with the Kreuz-Icon and - on Click - call me the (nameless) function described in 2)
-// 2) Take the "hidden" Navigation (= the WHOLE <div>-container) and REMOVE the class '.showNav', which will make the navigation disappear.
-navHideBtn.addEventListener('click', () => { 
-    navMenu.classList.remove('showNav');
-}); 
-
-
-
 // ---- Beginn js für den Showcase-Background-Slider ----
 const dottedBtns = document.querySelectorAll('.dotted-btns span'); // ACHTUNG (Key hier): Selektiert alle <span>-Elemente, welche innerhalb des Parent-Elements mit der der Klasse '.dotted-btns' enthalten sind! Es selektiert jedoch NICHT das <div>-Element mit der Klasse '.dotted-btns'!!!
 let slideCount = 0;
