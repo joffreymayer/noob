@@ -1,0 +1,148 @@
+.gallery-main-grid-container { /* Ursprünglich: .posts-main-container */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /****
+    --- General Syntax? --> repeat(How_many_columns, How_large_should_each_column_be)
+    --- What is 'repeat()'? --> This is a shorthand, essentially, allow us to more succinctly describe repeating values. We could have written "grid-template-columns: 33.33% 33.33% 33.33%", but this is very cumbersome...
+    --- What is '1fr'? --> The fr unit (a “fraction”) can be used when defining grids like any other CSS length such as %, px or em. 
+    --- Why should we use 'fr' instead of '%' or 'px'? --> Because it helps to maximize the whole amount of the screen, for each design and - thus - helps to create a less complex responsive design. 
+    More specifically - when building a grid layout - you will need to take into account the grid's gaps (between each column, which also has some pixels to it). If you would use 'px' or '%' instead, you would always need to calculate - by hand - how much of additional width the grid-gaps take. The introduction of the 'fr' unit can handle this "under the hood" and is - therefore - much more simple and flexible to use, when you design a website for a Desktop, a Tablet and a Phone simultaneously!
+    Note, however, that the property 'grid-template-columns: repeat(3, 1fr);' will NOT allow you to make the responsive design per se. You will still need to this via Media-Queries!!
+    */
+    grid-gap: 20px;
+}
+
+/******* Media-Queries to make the Grid fully Responsive ********/
+@media(max-width: 1170px){
+    .gallery-main-grid-container{
+        grid-template-columns: repeat(2, 1fr); /* Syntax: repeat(number of columns/rows, the column width we want);
+        Why 'fr'-unit is better alternative than 'px' or '%' in the CSS-Grid Layout: https://css-tricks.com/introduction-fr-css-unit/ 
+        */
+    }
+}
+@media(max-width: 768px){
+    .gallery-main-grid-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+/********/
+
+/** Filter-Knopf Design **/
+
+.category-head {
+    margin: 30px 0; /* Oben & Unten wird "Luft" gelassen aus Design-Gründen. */
+}
+
+.category-head ul {
+    list-style-type: none; /* Dadurch nimmt die un-ordered List keine Bullet-Points an. */
+    display: flex; /* Flex-Box Modell wird angewandt: dadurch werden alle <li>'s zu INLINE-Elemente und floaten aneinander.*/
+    flex-wrap: wrap;
+    justify-content: center; /* --- Noob: Change at the end for design-purposes?? */
+}
+
+.category-title {
+    display: flex;
+    justify-content: center;
+    background: #a8a8a8;
+    padding: 12px;
+    color: #fff;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    flex: 0 0 calc(16.6667% - 10px); /* 
+    --- Syntax: flex: flex-grow, flex-shrink, flex-basis
+        > flex-grow == A number specifying how much the item will grow relative to the rest of the flexible items.
+        > flex-shrink == A number specifying how much the item will shrink relative to the rest of the flexible items.
+        > flex-basis == The length of the item (in "%", "px", "em" or any other length unit).
+    --- Calc() == Allows to do: 1) addition, 2) substraction, 3) multiplication OR 4) division of ANY length-unit together with each other, e.g. you can combine different units for the calculations.
+        > Example: calc(100% - 30px)
+    */
+}
+
+.category-title:hover {
+    opacity: 0.7; /* Very Cool: For a hover-effect in a navigation you can simply put the opacity more lighter, to get a great effect! */
+}
+
+.category-title li {
+    padding: 0 10px; /* Push everything 10px to the left & right, for design-purposes. */
+}
+
+.category-title span {
+    color: #222;
+}
+
+.active {
+    background: #f0544f;
+}
+
+/** Produkt-Karte Design **/
+
+.gallery-main-grid-container > div{ /* Ursprünglich: .posts-main-container */
+    box-shadow: 0px 8px 22px -12px rgba(0, 0, 0, 0.64);
+}
+
+div.card-container:hover {/* Beautiful Hover-Effect when going above each card*/
+    box-shadow: 10px 16px 22px -12px rgba(0, 0, 0, 0.99);
+    border: 3px solid #777;
+}
+
+div.card-container a /*Need this, otherwise whole text becomes white because of <a>-tag...*/ {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+.card-img { /* Ursprünglich: .post-img */
+    position: relative;
+}
+
+.card-category { /* Ursprünglich: .category-name */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 2px;
+}
+
+.strom .card-category { /***
+    --- Ursprünglich: .business .category-name 
+    --- How is this style applied? --> It selects all elements with the class '.business' and - WITHIN the HTML-Element with the '.business'-class - it selects all the HTML-Elements that have - additionally - the class '.card-category. If both of these conditions are NOT simulatenously met, then it will NOT apply the blue-background color!!!
+    */
+    background: #00a7ea;
+}
+
+.vibration .card-category { /* Ursprünglich: .culture .category-name */
+    background: #f03250;
+}
+
+.antismog .card-category { /* Ursprünglich: .finance .category-name */
+    background: #2c2a4a;
+}
+
+.akustik .card-category { /* Ursprünglich: .sports .category-name */
+    background: #a1e44d;
+}
+
+.card-content { /* Ursprünglich: .post-content */
+    /* padding: 25px; */
+    background-color: #999;
+}
+
+.card-content h2 { /* Ursprünglich: .post-content h2 */
+    font-size: 22px;
+    padding: 30px 0px 22px 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-content p { /* Ursprünglich: .post-content p */
+    opacity: 0.7;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+	margin-block-end: 0px; /* Otherwise you have a weird white section at the end of the card, which you don't want!*/
+}
