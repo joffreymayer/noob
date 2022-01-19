@@ -38,6 +38,7 @@
     display: flex; /* Flex-Box Modell wird angewandt: dadurch werden alle <li>'s zu INLINE-Elemente und floaten aneinander.*/
     flex-wrap: wrap;
     justify-content: center; /* --- Noob: Change at the end for design-purposes?? */
+    padding-inline-start: 0;
 }
 
 .category-title {
@@ -98,6 +99,17 @@ div.card-container a /*Need this, otherwise whole text becomes white because of 
 
 .card-category { /* Ursprünglich: .category-name */
     position: absolute;
+    top: 60px; /* With this you can determine where on the Card the category will appear. */
+    left: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 2px;
+}
+
+.second-category { /* Ursprünglich: .category-name */
+    position: absolute;
     top: 20px;
     left: 20px;
     text-transform: uppercase;
@@ -105,6 +117,34 @@ div.card-container a /*Need this, otherwise whole text becomes white because of 
     color: #fff;
     padding: 4px 10px;
     border-radius: 2px;
+}
+
+/*Phone Styles*/
+@media only screen and (max-width: 345px) {
+    .card-image-two-cat{ /* Füge diese Klasse allen Bildern in der Gallerie zu, um sie zu zentrieren bei ganz schmalen Handys, wie z.B. das Galaxy-Fold!
+        > Der Vorteil dadurch ist, dass ich - bei zwei Kategorien - nicht den Abstand zwischen den Kategorie-Boxen verkleinern muss (ästhetisch sehr ugly...). */ 
+        margin-top: 50px;
+    }
+}
+
+.card-preis {
+    position: absolute;
+    left: 50%; /* To center the absolutely positioned <span>. */
+    top: 88%;
+    transform: translate(-50%, 0); /* To center the absolutely positioned <span>. */
+    bottom: 20px;
+    color: #000;
+    font-weight: bolder;
+    font-size: calc(1.5em + 1vmin); /* WICHTIG: To make the price's font-size dynamic. 
+        --> Explanation of what 'vmin' does: 'vmin' compares the height & width of a browser-window. 
+            > IF the HEIGHT of the browser window is LESS THAN its WIDTH, 1vmin will be equivalent to 1vh. 
+            > IF the WIDTH of the browser is LESS THAN it’s HEIGHT, 1vmin is equvialent to 1vw.*/
+    min-width: 250px;
+    text-align: center;
+}
+
+.only-card {
+    top: 20px;
 }
 
 .strom .card-category { /***
@@ -115,34 +155,67 @@ div.card-container a /*Need this, otherwise whole text becomes white because of 
 }
 
 .vibration .card-category { /* Ursprünglich: .culture .category-name */
-    background: #f03250;
+    background: #2c2a4a; 
 }
 
 .antismog .card-category { /* Ursprünglich: .finance .category-name */
-    background: #2c2a4a;
+    background: #9548ee;
 }
 
 .akustik .card-category { /* Ursprünglich: .sports .category-name */
-    background: #a1e44d;
+    background:  #78b18e; 
+}
+
+.einsteiger .second-category { /* Ursprünglich: .sports .category-name */
+    background: #75be1b;
+}
+
+.fortgeschritten .second-category { /* Ursprünglich: .sports .category-name */
+    background: #f1a821;
+}
+
+.experte .second-category { /* Ursprünglich: .sports .category-name */
+    background: #f03250;
 }
 
 .card-content { /* Ursprünglich: .post-content */
     /* padding: 25px; */
     background-color: #999;
+    margin-top: 30px; /* Brauchst du, ansonten kann der Preis nicht richtig abgebildet werden (vor allem auf sher kleine Handys! . */
 }
 
-.card-content h2 { /* Ursprünglich: .post-content h2 */
+@media only screen and (max-width: 320px) {
+    .card-content {
+        margin-top: 50px;
+    }
+
+    .card-preis {
+        top: 95%;
+    }
+}
+
+.card-content h2, .pseudo-title { /* Ursprünglich: .post-content h2 */
     font-size: 22px;
     padding: 30px 0px 22px 0px;
     font-weight: bold;
     text-align: center;
 }
 
-.card-content p { /* Ursprünglich: .post-content p */
+.card-content h2, .pseudo-title, .mehr-info  {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.mehr-info { /* Ursprünglich: .post-content p */
     opacity: 0.7;
     font-size: 15px;
     line-height: 1.8;
     text-align: center;
     padding: 0px 0px 10px 0px;
-	margin-block-end: 0px; /* Otherwise you have a weird white section at the end of the card, which you don't want!*/
+}
+
+/****/
+.card-home { /*Für Bilder auf "index.html": dort haben wir das Problem, dass die Bilder unterschiedliche Aspect-Ratios haben. Der "Trick" hier ist, Ihnen die "height" des kleinsten Bilds zu geben.*/
+    display: block; /*Need this, otherwise you have a strange small white-space below Image! */
+    height: 250px;
 }

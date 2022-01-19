@@ -1,0 +1,18 @@
+.white-section {
+    background-color: #fff;
+    padding: 7vw;
+}
+
+section.white-section {
+	text-align: left;
+}
+
+.unternehmen {
+	line-height: 1.5;
+}
+
+.unternehmen p {
+	font-size: 1.3em;
+    line-height: 1.5;
+    text-align:left;
+}

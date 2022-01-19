@@ -2,10 +2,6 @@ const categoryTitle = document.querySelectorAll('.category-title'); // Gibt eine
 // - Note: The variable 'categoryTitle' was declared via 'const', meaning that it cannot be overridden by a new value, once it is declared. The declaration via 'const' is useful when working on big projects and you do not want to change the value that is stored inside your declared variable. It stays CONSTANT ;)  
 const allCategoryPosts = document.querySelectorAll('.all'); // Gibt eine Liste aller HTML-Elemente mit der Klasse '.all'. --> Output: das sind 16 Divs, dh ALLE 16 Posts, die insgesamt als Karten enthalten sind.
 
-console.log(categoryTitle.length)
-console.log(categoryTitle[1])
-console.log(allCategoryPosts[0])
-
 for(let i = 0; i < categoryTitle.length; i++){
     categoryTitle[i].addEventListener('click', filterPosts.bind(this, categoryTitle[i]));
     // Syntax: target.addEventListener(event, function) <--> This means that - when an "event", such as a user that is clicking on some button, for example - a function gets called (in our case, the 'filterPosts()' custom-function that we constructed...).

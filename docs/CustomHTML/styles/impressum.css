@@ -1,0 +1,54 @@
+.white-section {
+    background-color: #fff;
+}
+
+section.white-section {
+	text-align: left;
+}
+
+@media only screen and (max-width: 989px) {
+    .white-section {
+        padding: 30px 20px;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    .white-section {
+        padding: 90px 80px;
+    }
+}
+
+.impressum-container {
+	padding: 30px 20px; /*Media-Querry*/
+}
+
+.impressum-content {
+	color: white;
+}
+
+.impressum-flex {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	border: 2px solid #000;
+    padding: 20px;
+}
+
+.impressum-wrap {
+	max-width: 500px;
+	width: 100%;
+}
+
+.impressum-text p, .impressum-item p {
+	margin: 10px;
+	line-height: 1.5;
+    text-align: left;
+}
+
+.impressum-text a:link {
+    color: blue;
+}
+
+.impressum-row {
+	margin-top: 5%;
+}

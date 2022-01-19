@@ -325,7 +325,7 @@ div.gallery img {
     background-position: center;
     min-height: 400px;
 	position: relative;
-    height: 100%;
+    height: auto; /*WICHTIG: Wenn du hier auf 'auto' stellst, dann "wächst" das Bild bis zum Text herunter beim "Erfahre Mehr"-Knopf. */
 	width:50%;
 	display: flex;
 }
@@ -417,10 +417,31 @@ div.gallery img {
 	justify-content: space-evenly;
 }
 
-/*Für Bilder*/
+/*** Für Bilder ***/
 img {
 	width: 100%; /*Muss man setzen, sonst zoomt das Bild stark heran xD*/
 	height: auto;
+
+	/* For Animation of Lazy-Loading */
+	transform: translateX(0);
+	opacity: 0;
+	transition: all 1s; 
+	/* 
+	*/
+}
+
+/** Lazy-Load Animation for <img>-Tag in order to make them visible **/
+
+.lazy-fade {
+	transform: translateX(0);
+	opacity: 1.0;
+	transition: all 1s;
+} 
+/* 
+*/
+
+.flex-background-img { /*Diese Klasse dient allen Bildern, welche in der "Erfahre-mehr"-Sektion drin sind. Ursprünglich waren diese Background-Images. Aber weil lazy-loading einfacher zu handeln ist via dem <img>-Tag, habe ich diese nun umgewandelt. */
+	object-fit: cover;
 }
 
 .container {
@@ -990,7 +1011,6 @@ blockquote#test {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
   text-align: center;
   background-color: #2f343a;
   overflow: hidden;
@@ -1010,11 +1030,17 @@ blockquote#test {
 	margin-top: 50px;
 	margin-left: auto; /*Deaktivieren von margin-left & -right, wenn man Kontaktformular einfügt*/
 	margin-right: auto; 
+	margin-bottom: 20px;
+	padding: 1rem;
 }
 
 .adresseUn {
 	background: #F9F9F9;
 	padding: 12px 10px;
+}
+
+.adresseUn i {
+	font-size: 3vh;
 }
 
 .adresseUn h2 {
@@ -1051,106 +1077,6 @@ blockquote#test {
     position:absolute;
 }
 
-.footcontainer {
-	max-width: 400px;
-	width: 100%;
-	float: right;
-	margin-top: 50px;
-	margin: 0 auto;
-}
-
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
-
-#contact {
-	background:#F9F9F9;
-	padding:25px;
-	margin:50px 0;
-}
-
-#contact h3 {
-	color: #F96;
-	display: block;
-	font-size: 30px;
-	font-weight: 400;
-}
-
-#contact h4 {
-	margin:5px 0 15px;
-	display:block;
-	font-size:13px;
-}
-
-fieldset {
-	border: medium none !important;
-	margin: 0 0 10px;
-	min-width: 100%;
-	padding: 0;
-	width: 100%;
-}
-
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-	width:100%;
-	border:1px solid #CCC;
-	background:#FFF;
-	margin:0 0 5px;
-	padding:10px;
-}
-
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
-	-webkit-transition:border-color 0.3s ease-in-out;
-	-moz-transition:border-color 0.3s ease-in-out;
-	transition:border-color 0.3s ease-in-out;
-	border:1px solid #AAA;
-}
-
-#contact textarea {
-	height:100px;
-	max-width:100%;
-  resize:none;
-}
-
-#contact button[type="submit"] {
-	cursor:pointer;
-	width:100%;
-	border:none;
-	background:#0CF;
-	color:#FFF;
-	margin:0 0 5px;
-	padding:10px;
-	font-size:15px;
-}
-
-#contact button[type="submit"]:hover {
-	background:#09C;
-	-webkit-transition:background 0.3s ease-in-out;
-	-moz-transition:background 0.3s ease-in-out;
-	transition:background-color 0.3s ease-in-out;
-}
-
-#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
-
-#contact input:focus, #contact textarea:focus {
-	outline:0;
-	border:1px solid #999;
-}
-::-webkit-input-placeholder {
- color:#888;
-}
-:-moz-placeholder {
- color:#888;
-}
-::-moz-placeholder {
- color:#888;
-}
-:-ms-input-placeholder {
- color:#888;
-}
-.first .titel h2 {
-	font-family: Verdana, Geneva, sans-serif;
-}
-.first #rcolumn p {
-	font-family: Verdana, Geneva, sans-serif;
-}
 
 .footer .adresseWrap .adresseUn h2 {
 	font-family: Verdana, Geneva, sans-serif;
@@ -1172,8 +1098,19 @@ fieldset {
 .last-container {
 	width: 100%;
 	margin-top: 25px;
+	margin-bottom: 15px;
 	display: flex;
 	justify-content: space-around;
+}
+
+@media only screen and (max-width: 989px) {
+	.last-container{
+		flex-wrap: wrap;
+	}
+
+	.link-item {
+		margin-top: 20px;
+	}
 }
 
 .copy-item {
@@ -1191,12 +1128,86 @@ fieldset {
 	text-decoration: none;
 }
 
-/* noob: Nicht funktionierende Background-image Alternative....
+/*** -- Kontakt-Formular -- **/
+.full-screen-container {
+    width: 100vw; /*View-Width is set to 100% of the screen's width.*/
+    background-size: cover; /*This will make that the image scales down & keep it's aspect-ratio.*/
+    background-position: center;/*This will make that our image will always be in the center of our browser, independetly of ANY size of any devices!*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.hero-image {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-}*/
+.login-container {
+    background-color: hsla(201, 100%, 6%, 0.6);
+    padding: 50px 30px;
+    min-width: min(400px, 90vw); /* Damit das Formular Responsive wird. Garantiert, dass - bei grossen Screens - die Grösse des Formulars NICHT > 400px wird. Umgekehrt - wird bei Screens mit einem Bildschirm < 400px - jeweils das Formular immer 90% der Screen-Breite // Viewports annehmen (= '90vw').
+        > min() ermöglicht dieses Responsive-Verhalten: dadurch, dass entweder 400px ODER 90vw als Minimum-Wert verwendet wird. */
+}
+
+.login-title {
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: normal;
+	font-family: Quicksand;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    color: white;
+    font-weight: lighter;
+    font-size: 1.5em;
+    margin-bottom: 7px;
+	font-family: Quicksand;
+}
+
+.input-group input, .field {
+    font-size: 1.5em;
+    padding: .1em .25em;
+    background: hsla(201, 100%, 91%, 0.3); /*Get rid of the default background of the input.*/
+    border: 1px solid hsla(201, 100%, 6%); /*Get rid of the default background of the input.*/
+    outline: none; /*Get rid of the default background of the input.*/
+    border-radius: 5px;
+    color: white;
+    font-weight: lighter;
+	font-family: Quicksand;
+}
+
+.field {
+    min-height: 200px;
+}
+
+.input-group input:focus {
+    border: 1px solid hsla(201, 100%, 50%);
+}
+
+.login-button {
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 5px;
+    background: hsla(201, 100%, 50%, 0.1);
+    border: 1px solid hsla(201, 100%, 50%);
+    outline: none;
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin-top: 20px;
+    cursor: pointer;
+	font-family: Quicksand;
+	color: #fff;
+}
+
+.login-button:hover {
+    background-color: hsla(201, 100%, 50%, 0.3);
+}
+
+.login-button:focus {
+    background-color: hsla(201, 100%, 50%, 0.5);
+}
