@@ -58,13 +58,16 @@
   </header>
 
 
-  <main>
+  
   <!-- Beginn Hero-Image (= 1 Page-Slider)-->
     <div class="showcase-wrapper">
 
         <div class="showcase-content">
 
-			<div class="showcase">
+			<div class="showcase" style="background-image: url(bilder/produkte/abkoppler-smoothspike-mk4.jpg);
+			background-size: cover;
+			background-position: center;">
+				<img src="bilder/produkte/abkoppler-smoothspike-mk4.jpg" alt="" style="display: none;"> <!-- Hack for better LCP in Lighthouse. -->
 				<h1>OptimizeAudio<br>
 				Produkte</h1>
 				<a href="#sortiment"><button type="button">Sortiment Entdecken</button></a>
@@ -260,433 +263,353 @@
 	</section>
 
     <section class="products"><a id="sortiment" class="scrollTo"></a>
-			<header class="products-header">
-				<h2 class="products-h1">OptimizeAudio Klangop&shy;ti&shy;mie&shy;rungs-Zubehör</h2>
-			</header>
+		<header class="products-header">
+			<h2 class="products-h1">Weiteres OptimizeAudio Klangop&shy;ti&shy;mie&shy;rungs-Zubehör</h2>
+		</header>
 
-			<div class="gallery-container">
+		<div class="gallery-container">
 
-				<div class="category-head">
-					<ul>
-						<div class="category-title active" id="all">
-							<li>Alle</li>
-							<span></span>
-						</div>
-						<div class="category-title" id="vibration">
-							<li>Vibrationen</li>
-							<span></span>
-						</div>
-						<div class="category-title" id="strom">
-							<li>Strom</li>
-							<span></span>
-						</div>
-						<div class="category-title" id="antismog">
-							<li>Antismog</li>
-							<span></span>
-						</div>
-						<div class="category-title" id="akustik">
-							<li>Raum-Akustik</li>
-							<span></span>
-						</div>                  
-					</ul>
-				</div>
-			
-			<div class="gallery-container">
-				<div class="gallery-collect">
-	
-					<div class="gallery-main-grid-container">
-	
-						<div class="card-container vibration all">
-							<a href="abkoppler-geraetschaften.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/abkoppler/abkoppler-transaperent-bg.jpg" alt="OptimizeAudio Smoothspike Abkoppler für Geräte, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/abkoppler/abkoppler-transaperent-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Vibrationen</span>
-									<span class="card-preis">CHF / Stk. 50</span>
-								</div>
-								<div class="card-content">
-									<h2>Abkoppler Gerätschaften</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div>
-							</a>
-						</div> <!-- End of one Card -->
-	
-						<div class="card-container vibration all">
-							<a href="abkoppler-kabel.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/kabelheber/kabelheber-transparenter-bg.jpg" alt="OptimizeAudio Abkoppler für Kabel, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/kabelheber/kabelheber-transparenter-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Vibrationen</span>
-									<span class="card-preis">CHF / Stk. 99</span>
-								</div>
-								<div class="card-content">  
-									<h2>Abkoppler Kabel</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div>
-							</a>
-						</div> <!-- End of one Card -->
-	
-	
-						<div class="card-container strom all">
-							<a href="abschlusswiderstand-75-ohm-110-ohm.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/abschlusswiderstand/abschlusswiderstand-transparenter-bg.jpg" alt="OptimizeAudio Abschlusswiderstand, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/abschlusswiderstand/abschlusswiderstand-transparenter-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Strom</span>
-									<span class="card-preis">CHF / Stk. 60</span>
-								</div>
-								<div class="card-content">
-									<h2>Abschlusswiderstand</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div> 
-							</a>
-						</div> <!-- End of one Card -->
-	
-	
-						<div class="card-container vibration all">
-							<a href="antiresonatoren-an-geraete.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/antiresonatoren/antiresonator-transparenter-bg.jpg" alt="OptimizeAudio Antiresonatoren für Geräte, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/antiresonatoren/antiresonator-transparenter-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Vibrationen</span>
-									<span class="card-preis">CHF 75-125 <br>pro Gerät</span>
-								</div>
-								<div class="card-content">
-									<h2>Antiresonatoren Geräte</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div>
-							</a>
-						</div> <!-- End of one Card -->
-	
-						<div class="card-container vibration all">
-							<a href="antiresonatoren-an-lautsprecher.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/antiresonatoren/antiresonator-transparenter-bg.jpg" alt="OptimizeAudio Antiresonatoren für Lautsprecher, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/antiresonatoren/antiresonator-transparenter-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Vibrationen</span>
-									<span class="card-preis">ab CHF 300 <br> pro Lautsprecher</span>
-								</div>
-								<div class="card-content">
-									<h2>Antiresonatoren Lautsprecher</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div>
-							</a>
-						</div> <!-- End of one Card -->
-	
-	
-						<div class="card-container vibration all">
-							<a href="antiresonatoren-in-raum.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/antiresonatoren/antiresonator-transparenter-bg.jpg" alt="OptimizeAudio Antiresonatoren für den Raum, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/antiresonatoren/antiresonator-transparenter-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Vibrationen</span>
-									<span class="card-preis">CHF / Stk. 25 </span>
-								</div>
-								<div class="card-content">
-									<h2>Antiresonatoren Raum</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div>
-							</a>
-						</div> <!-- End of one Card -->
-	
-						<div class="card-container antismog all">
-							<a href="antismog-glas.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/abkoppler/abkoppler-transaperent-bg.jpg" alt="OptimizeAudio Antismog Glas, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/abkoppler/abkoppler-transaperent-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Antismog</span>
-									<span class="card-preis">CHF / Stk. 149 </span>
-								</div>
-								<div class="card-content">
-									<h2>Antismog Glas</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div> 
-							</a>
-						</div> <!-- End of one Card -->
-	
-						<div class="card-container antismog all">
-							<a href="antismog-kleber-an-geraete.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/abkoppler/abkoppler-transaperent-bg.jpg" alt="OptimizeAudio Antismog-Kleber für Geräte, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/abkoppler/abkoppler-transaperent-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Antismog</span>
-									<span class="card-preis">ab CHF 50 <br> pro Gerät</span>
-								</div>
-								<div class="card-content">
-									<h2>Antismog-Kleber Geräte</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div>  
-							</a>
-						</div> <!-- End of one Card -->
-	
-	
-						<div class="card-container antismog all">
-							<a href="antismog-kleber-an-lautsprecher.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/abkoppler/abkoppler-transaperent-bg.jpg" alt="OptimizeAudio Antismog-Kleber für Lautsprecher, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/abkoppler/abkoppler-transaperent-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Antismog</span>
-									<span class="card-preis">ab CHF 300 <br> pro Lautsprecher</span>
-								</div>
-								<div class="card-content">
-									<h2>Antismog-Kleber Lautsprecher</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div>  
-							</a>
-						</div> <!-- End of one Card -->
-	
-						<div class="card-container strom all">
-							<a href="internet-kit.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/ethernetkit/internetkit-transparenter-bg.jpg" alt="OptimizeAudio Internet-KIT, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/ethernetkit/internetkit-transparenter-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Strom</span>
-									<span class="card-preis">CHF / Stk. 2'490</span>
-								</div>
-								<div class="card-content">
-									<h2>Internet-KIT</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div> 
-							</a>
-						</div> <!-- End of one Card -->
-	
-						<div class="card-container akustik all">
-							<a href="klangpyramide.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/klangpyramide/klangpyramide-transparenter-bg.jpg" alt="OptimizeAudio Klangpyramide, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/klangpyramide/klangpyramide-transparenter-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Raumakustik</span>
-									<span class="card-preis">CHF / Stk. 1'890</span>
-								</div>
-								<div class="card-content">
-									<h2>Klangpyramide</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div>  
-							</a>
-						</div> <!-- End of one Card -->
-	
-	
-						<div class="card-container strom all">
-							<a href="lautsprecherkabel.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/lautsprecherkabel/lautsprecherkabel-transparenter-bg.jpg" alt="OptimizeAudio Lautsprecherkabel, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/lautsprecherkabel/lautsprecherkabel-transparenter-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Strom</span>
-									<span class="card-preis">ab CHF 800</span>
-								</div>
-								<div class="card-content">  
-									<h2>Lautsprecher-Kabel</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div>  
-							</a>
-						</div> <!-- End of one Card -->
-	
-						<div class="card-container strom all">
-							<a href="netzfilter.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/netzfilter/netzfilter-transparenter-bg.jpg" alt="OptimizeAudio Netzfilter, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/netzfilter/netzfilter-transparenter-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Strom</span>
-									<span class="card-preis">CHF / Stk. 850</span>
-								</div>
-								<div class="card-content">  
-									<h2>Netzfilter</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div>
-							</a>
-						</div> <!-- End of one Card -->
-	
-						<div class="card-container strom all">
-							<a href="netzkabel.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/netzkabel/netzkabel-transparenter-bg.jpg" alt="OptimizeAudio Netzkabel, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/netzkabel/netzkabel-transparenter-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Strom</span>
-									<span class="card-preis">ab CHF 350</span>
-								</div>
-								<div class="card-content"> 
-									<h2>Netzkabel</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div>
-							</a>
-						</div> <!-- End of one Card -->
-	
-	
-						<div class="card-container strom all">
-							<a href="netzleiste.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/netzfilter/netzfilter-transparenter-bg.jpg" alt="OptimizeAudio Netzleiste, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/netzfilter/netzfilter-transparenter-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Strom</span>
-									<span class="card-preis">ab CHF 750</span>
-								</div>
-								<div class="card-content"> 
-									<h2>Netzleiste</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div>  
-							</a>
-						</div> <!-- End of one Card -->
-	
-						<div class="card-container antismog all">
-							<a href="netzstecker-antismog.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/netzstecker/netzstecker-transparenter-bg.jpg" alt="OptimizeAudio Netzstecker Antismog, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/netzstecker/netzstecker-transparenter-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Antismog</span>
-									<span class="card-preis">CHF 149</span>
-								</div>
-								<div class="card-content">
-									<h2>Netzstecker Antismog</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div>   
-							</a>
-						</div> <!-- End of one Card -->
-	
-						<div class="card-container strom all">
-							<a href="audiophile-schmelzsicherung.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/schmelzsicherung/schmelzsicherung-transparenter-bg.jpg" alt="OptimizeAudio audiophile Schmelzsicherung, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/schmelzsicherung/schmelzsicherung-transparenter-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Strom</span>
-									<span class="card-preis">CHF / Stk. 40</span>
-								</div>
-								<div class="card-content"> 
-									<h2>Schmelzsicherung</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div>  
-							</a>
-						</div> <!-- End of one Card -->
-	
-	
-						<div class="card-container strom all">
-							<a href="verbindungskabel.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/verbindungskabel/verbindungskabel-transparenter-bg.jpg" alt="OptimizeAudio Verbindungs-Kabel, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/verbindungskabel/verbindungskabel-transparenter-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Strom</span>
-									<span class="card-preis">ab CHF 400</span>
-								</div>
-								<div class="card-content">   
-									<h2>Verbindungs-Kabel</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div>
-							</a>
-						</div> <!-- End of one Card -->
-	
-						<div class="card-container strom all">
-							<a href="zobelglied.html">
-								<div class="card-img">
-									<!--
-										<img src="bilder/preise/zobelglied/zobelglied-transparenter-bg.jpg" alt="OptimizeAudio Zobelglied, Preis in CHF."
-										class="card-image-two-cat">
-									-->
-									<img data-lazy="bilder/preise/zobelglied/zobelglied-transparenter-bg.jpg" alt=""> 
-									<!-- 
-									-->
-									<span class="card-category only-card">Strom</span>
-									<span class="card-preis">CHF 1'150</span>
-								</div>
-								<div class="card-content"> 
-									<h2>Zobelglied</h2>
-									<p class="mehr-info">Klick für mehr Informationen</p>
-								</div> 
-							</a>
-						</div> <!-- End of one Card -->
-	
-					</div><!-- End of the Grid-Container -->
-		</section>
+			<div class="category-head">
+				<ul>
+					<div class="category-title active" id="all">
+						<li>Alle</li>
+						<span></span>
+					</div>
+					<div class="category-title" id="vibration">
+						<li>Vibrationen</li>
+						<span></span>
+					</div>
+					<div class="category-title" id="strom">
+						<li>Strom</li>
+						<span></span>
+					</div>
+					<div class="category-title" id="antismog">
+						<li>Antismog</li>
+						<span></span>
+					</div>
+					<div class="category-title" id="akustik">
+						<li>Raum-Akustik</li>
+						<span></span>
+					</div>
+					<div class="category-title" id="einsteiger">
+						<li>Einsteiger</li>
+						<span></span>
+					</div>   
+					<div class="category-title" id="fortgeschritten">
+						<li>Fortgeschritten</li>
+						<span></span>
+					</div>  
+					<div class="category-title" id="experte">
+						<li>Experte</li>
+						<span></span>
+					</div> 
+				</ul>
+			</div>
+		
+		<div class="gallery-container">
+			<div class="gallery-collect">
 
-  </main>
+				<div class="gallery-main-grid-container">
+
+					<div class="card-container vibration einsteiger all">
+						<a href="abkoppler-geraetschaften.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/abkoppler/abkoppler-transaperent-bg.jpg" alt="OptimizeAudio Smoothspike Abkoppler für Geräte, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Vibrationen</span>
+								<span class="second-category">Einsteiger</span>
+								<span class="card-preis">CHF / Stk. 50</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Abkoppler Gerätschaften</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container vibration fortgeschritten all">
+						<a href="abkoppler-kabel.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/kabelheber/kabelheber-transparenter-bg.jpg" alt="OptimizeAudio Abkoppler für Kabel, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Vibrationen</span>
+								<span class="second-category">Fortgeschritten</span>
+								<span class="card-preis">CHF / Stk. 99</span>
+							</div>
+							<div class="card-content">  
+								<p class="pseudo-title">Abkoppler Kabel</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>
+						</a>
+					</div> <!-- End of one Card -->
+
+
+					<div class="card-container strom experte all">
+						<a href="abschlusswiderstand-75-ohm-110-ohm.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/abschlusswiderstand/abschlusswiderstand-transparenter-bg.jpg" alt="OptimizeAudio Abschlusswiderstand, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Strom</span>
+								<span class="second-category">Experte</span>
+								<span class="card-preis">CHF / Stk. 60</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Abschlusswiderstand</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div> 
+						</a>
+					</div> <!-- End of one Card -->
+
+
+					<div class="card-container vibration all">
+						<a href="antiresonatoren-an-geraete.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/antiresonatoren/antiresonator-transparenter-bg.jpg" alt="OptimizeAudio Antiresonatoren für Geräte, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Vibrationen</span>
+								<span class="card-preis">CHF 75-125 <br>pro Gerät</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Antiresonatoren Geräte</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container vibration all">
+						<a href="antiresonatoren-an-lautsprecher.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/antiresonatoren/antiresonator-transparenter-bg.jpg" alt="OptimizeAudio Antiresonatoren für Lautsprecher, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Vibrationen</span>
+								<span class="card-preis">ab CHF 300 <br> pro Lautsprecher</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Antiresonatoren Lautsprecher</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>
+						</a>
+					</div> <!-- End of one Card -->
+
+
+					<div class="card-container vibration all">
+						<a href="antiresonatoren-in-raum.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/antiresonatoren/antiresonator-transparenter-bg.jpg" alt="OptimizeAudio Antiresonatoren für den Raum, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Vibrationen</span>
+								<span class="card-preis">CHF / Stk. 25 </span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Antiresonatoren Raum</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container antismog all">
+						<a href="antismog-glas.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/abkoppler/abkoppler-transaperent-bg.jpg" alt="OptimizeAudio Antismog Glas, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Antismog</span>
+								<span class="card-preis">CHF / Stk. 149 </span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Antismog Glas</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div> 
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container antismog all">
+						<a href="antismog-kleber-an-geraete.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/abkoppler/abkoppler-transaperent-bg.jpg" alt="OptimizeAudio Antismog-Kleber für Geräte, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Antismog</span>
+								<span class="card-preis">ab CHF 50 <br> pro Gerät</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Antismog-Kleber Geräte</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>  
+						</a>
+					</div> <!-- End of one Card -->
+
+
+					<div class="card-container antismog all">
+						<a href="antiresonatoren-an-lautsprecher.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/abkoppler/abkoppler-transaperent-bg.jpg" alt="OptimizeAudio Antismog-Kleber für Lautsprecher, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Antismog</span>
+								<span class="card-preis">ab CHF 300 <br> pro Lautsprecher</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Antismog-Kleber Lautsprecher</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>  
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container strom all">
+						<a href="internet-kit.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/ethernetkit/internetkit-transparenter-bg.jpg" alt="OptimizeAudio Internet-KIT, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Strom</span>
+								<span class="card-preis">CHF / Stk. 2'490</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Internet-KIT</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div> 
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container akustik all">
+						<a href="klangpyramide.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/klangpyramide/klangpyramide-transparenter-bg.jpg" alt="OptimizeAudio Klangpyramide, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Raumakustik</span>
+								<span class="card-preis">CHF / Stk. 1'890</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Klangpyramide</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>  
+						</a>
+					</div> <!-- End of one Card -->
+
+
+					<div class="card-container strom all">
+						<a href="lautsprecherkabel.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/lautsprecherkabel/lautsprecherkabel-transparenter-bg.jpg" alt="OptimizeAudio Lautsprecherkabel, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Strom</span>
+								<span class="card-preis">ab CHF 800</span>
+							</div>
+							<div class="card-content">  
+								<p class="pseudo-title">Lautsprecher-Kabel</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>  
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container strom all">
+						<a href="netzfilter.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/netzfilter/netzfilter-transparenter-bg.jpg" alt="OptimizeAudio Netzfilter, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Strom</span>
+								<span class="card-preis">CHF / Stk. 850</span>
+							</div>
+							<div class="card-content">  
+								<p class="pseudo-title">Netzfilter</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container strom all">
+						<a href="netzkabel.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/netzkabel/netzkabel-transparenter-bg.jpg" alt="OptimizeAudio Netzkabel, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Strom</span>
+								<span class="card-preis">ab CHF 350</span>
+							</div>
+							<div class="card-content"> 
+								<p class="pseudo-title">Netzkabel</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>
+						</a>
+					</div> <!-- End of one Card -->
+
+
+					<div class="card-container strom all">
+						<a href="netzleiste.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/netzfilter/netzfilter-transparenter-bg.jpg" alt="OptimizeAudio Netzleiste, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Strom</span>
+								<span class="card-preis">ab CHF 750</span>
+							</div>
+							<div class="card-content"> 
+								<p class="pseudo-title">Netzleiste</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>  
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container antismog all">
+						<a href="netzstecker-antismog.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/netzstecker/netzstecker-transparenter-bg.jpg" alt="OptimizeAudio Netzstecker Antismog, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Antismog</span>
+								<span class="card-preis">CHF 149</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Netzstecker Antismog</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>   
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container strom all">
+						<a href="audiophile-schmelzsicherung.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/schmelzsicherung/schmelzsicherung-transparenter-bg.jpg" alt="OptimizeAudio audiophile Schmelzsicherung, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Strom</span>
+								<span class="card-preis">CHF / Stk. 40</span>
+							</div>
+							<div class="card-content"> 
+								<p class="pseudo-title">Schmelzsicherung</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>  
+						</a>
+					</div> <!-- End of one Card -->
+
+
+					<div class="card-container strom all">
+						<a href="verbindungskabel.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/verbindungskabel/verbindungskabel-transparenter-bg.jpg" alt="OptimizeAudio Verbindungs-Kabel, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Strom</span>
+								<span class="card-preis">ab CHF 400</span>
+							</div>
+							<div class="card-content">   
+								<p class="pseudo-title">Verbindungs-Kabel</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container strom all">
+						<a href="zobelglied.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/zobelglied/zobelglied-transparenter-bg.jpg" alt="OptimizeAudio Zobelglied, Preis in CHF."
+								class="card-image-two-cat">
+								<span class="card-category">Strom</span>
+								<span class="card-preis">CHF 1'150</span>
+							</div>
+							<div class="card-content"> 
+								<p class="pseudo-title">Zobelglied</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div> 
+						</a>
+					</div> <!-- End of one Card -->
+
+				</div><!-- End of the Grid-Container -->
+	</section>
+
+  
 
   <!---------------Beginn Footer---------------------------------->
 	<footer class="footer">
