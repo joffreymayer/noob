@@ -37,9 +37,15 @@
 }
 
 .showcase h1 {
-    font-size: 1.8rem;
+    font-size: min(76px, 10vw);
     width: min(600px, 90vw);
     margin: 1.5rem auto; /* Bringt mehr Luft zwischen Button & Titel. */
+}
+
+@media screen and (max-width: 340px){
+    .showcase h1{
+        font-size: min(2rem, 8vh);
+    }
 }
 
 .showcase button {
@@ -64,9 +70,9 @@
 }
 
 /* - Background Images for Slider - */
-.showcase:nth-child(1){
+/* .showcase:nth-child(1){
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../images/abkoppler-smoothspike-mk4.jpg) center/cover no-repeat;
-}
+} */
 
 .border-wrapper {
     background-color: rgba(204,204,204, 0.65);
@@ -75,7 +81,7 @@
 }
 
 /* - Responsiveness of Slider - */
-@media screen and (min-width: 375px){
+/* @media screen and (min-width: 375px){
     .showcase h1{
         font-size: 3rem;
     }
@@ -94,4 +100,4 @@
     .showcase button{
         font-size: 1.05rem;
     }
-}
+} */
