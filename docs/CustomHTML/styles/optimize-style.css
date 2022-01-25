@@ -12,6 +12,55 @@ html, body  {
 	scroll-behavior:smooth;
 }
 
+:root { 
+	--kabel-abkoppler: url(../bilder/produkte/kabel-abkoppler/kabel-abkoppler-1.jpg); /*Trick explained on this page: https://stackoverflow.com/questions/9808233/is-it-possible-to-put-css-media-rules-inline*/ 
+	--abschlusswiderstand: url(../bilder/produkte/abschlusswiderstand/abschlusswiderstand-75-ohm.jpg);
+	--antiresBoxen: url(../bilder/produkte/antiresonatoren-an-lautsprecher/antiresonatoren-an-focal-scala-utopia-2.jpg);
+	--antiresWand: url(../bilder/produkte/antiresonatoren-raum/antiresonatoren-fuer-raum-auf-einer-wand.jpg);
+	--pyramide: url(../bilder/produkte/klang-pyramide/optimizeaudio-klangpyramide-0.jpg);
+	--lautsprecherkabel: url(../bilder/produkte/lautsprecherkabel/hybrid-lautsprecherkabel-optimizeaudio-1.jpg);
+	--netzfilter: url(../bilder/produkte/netzfilter/optimizeaudio-netzfilter-1x4-anschluesse.jpg);
+	--netzkabel: url(../bilder/produkte/netzkabel/netzkabel-optimize.jpg);
+	--zobelglied: url(../bilder/produkte/zobelglied/zobelglied-optimize-audio.jpg);
+}
+
+/** -- Responsive Background-Images -- **/
+@media only screen and (max-width: 480px) {
+    :root { 
+		--kabel-abkoppler: url(../bilder/produkte/kabel-abkoppler/kabel-abkoppler-2.jpg); 
+		--abschlusswiderstand: url(../bilder/produkte/abschlusswiderstand/abschlusswiderstand-75-ohm-innenleben.jpg);
+		--antiresBoxen: url(../bilder/produkte/antiresonatoren-an-lautsprecher/monitor-audio-silver-50-optimierung.jpg);
+		--antiresWand: url(../bilder/produkte/antiresonatoren-raum/antiresonator-von-optimize-audio.jpg);
+		--pyramide: url(../bilder/produkte/klang-pyramide/optimizeaudio-klangpyramide-5.jpg);
+		--lautsprecherkabel: url(../bilder/produkte/lautsprecherkabel/hybrid-lautsprecherkabel-optimizeaudio-3.jpg);
+		--netzfilter: url(../bilder/produkte/netzfilter/optimizeaudio-netzfilter-1x1.jpg);
+		--netzkabel: url(../bilder/produkte/netzkabel/netzkabel-optimize-schuko.jpg);
+		--zobelglied: url(../bilder/produkte/zobelglied/zobelglied-beim-giessen.jpg);
+	
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 640px){
+	:root { 
+		--kabel-abkoppler: url(../bilder/produkte/kabel-abkoppler/kabel-abkoppler-3.jpg); 
+		--abschlusswiderstand: url(../bilder/produkte/abschlusswiderstand/abschlusswiderstand-75-ohm-innenleben.jpg);
+		--antiresBoxen: url(../bilder/produkte/antiresonatoren-an-lautsprecher/monitor-audio-silver-50-optimierung.jpg);
+		--antiresWand: url(../bilder/produkte/antiresonatoren-raum/antiresonator-von-optimize-audio.jpg);
+		--pyramide: url(../bilder/produkte/klang-pyramide/optimizeaudio-klangpyramide-5.jpg);
+		--lautsprecherkabel: url(../bilder/produkte/lautsprecherkabel/hybrid-lautsprecherkabel-optimizeaudio-2.jpg);
+		--netzfilter: url(../bilder/produkte/netzfilter/optimizeaudio-netzfilter-1x1.jpg);
+		--netzkabel: url(../bilder/produkte/netzkabel/netzkabel-optimize-schuko.jpg);
+		--zobelglied: url(../bilder/produkte/zobelglied/zobelglied-beim-giessen.jpg);
+	}
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px){
+	:root { --kabel-abkoppler: 
+		url(../bilder/produkte/kabel-abkoppler/kabel-abkoppler-4.jpg); 
+	}
+}
+/** -- ENDE Responsive Background-Images -- **/
+
 p {
 	text-align: center;
 }
@@ -64,7 +113,7 @@ nav ul {
 
 nav ul li {
   margin: 0px;
-  display: inline-block; /*Würde auch mit display:block funktionieren.*/
+  display: block; /*Würde auch mit display:inline-block funktionieren.*/
   float: left;
   background-color: #282E34;
 }
@@ -421,7 +470,10 @@ div.gallery img {
 img {
 	width: 100%; /*Muss man setzen, sonst zoomt das Bild stark heran xD*/
 	height: auto;
+}
 
+/** Lazy-Load Animation for <img>-Tag in order to make them visible **/
+.lazy {
 	/* For Animation of Lazy-Loading */
 	transform: translateX(0);
 	opacity: 0;
@@ -429,8 +481,6 @@ img {
 	/* 
 	*/
 }
-
-/** Lazy-Load Animation for <img>-Tag in order to make them visible **/
 
 .lazy-fade {
 	transform: translateX(0);

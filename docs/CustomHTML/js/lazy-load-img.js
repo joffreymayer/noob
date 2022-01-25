@@ -5,7 +5,7 @@
 //  2) Make sure to add the 'data-lazy' on each <img>-Element INSTEAD of the 'src'-attribute, otherwise you will not see any animation (because wa added also css that hides all images at the beginning.)
 //  3) Add the CSS from the video in order to make the CSS-animation work.
 
-const targets = document.querySelectorAll('img'); // Select all the <img>-Elements
+const targets = document.querySelectorAll('img.lazy'); // Select all the <img>-Elements
 
 const lazyLoad = target => {
     // We use the IntersectionObserver()-API in order to get the lazy-loading job done:
