@@ -12,8 +12,8 @@ html, body  {
 	scroll-behavior:smooth;
 }
 
-:root { 
-	--kabel-abkoppler: url(../bilder/produkte/kabel-abkoppler/kabel-abkoppler-1.jpg); /*Trick explained on this page: https://stackoverflow.com/questions/9808233/is-it-possible-to-put-css-media-rules-inline*/ 
+/* :root { 
+	--kabel-abkoppler: url(../bilder/produkte/kabel-abkoppler/kabel-abkoppler-1.jpg); Trick explained on this page: https://stackoverflow.com/questions/9808233/is-it-possible-to-put-css-media-rules-inline
 	--abschlusswiderstand: url(../bilder/produkte/abschlusswiderstand/abschlusswiderstand-75-ohm.jpg);
 	--antiresBoxen: url(../bilder/produkte/antiresonatoren-an-lautsprecher/antiresonatoren-an-focal-scala-utopia-2.jpg);
 	--antiresWand: url(../bilder/produkte/antiresonatoren-raum/antiresonatoren-fuer-raum-auf-einer-wand.jpg);
@@ -22,10 +22,10 @@ html, body  {
 	--netzfilter: url(../bilder/produkte/netzfilter/optimizeaudio-netzfilter-1x4-anschluesse.jpg);
 	--netzkabel: url(../bilder/produkte/netzkabel/netzkabel-optimize.jpg);
 	--zobelglied: url(../bilder/produkte/zobelglied/zobelglied-optimize-audio.jpg);
-}
+} */
 
 /** -- Responsive Background-Images -- **/
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
     :root { 
 		--kabel-abkoppler: url(../bilder/produkte/kabel-abkoppler/kabel-abkoppler-2.jpg); 
 		--abschlusswiderstand: url(../bilder/produkte/abschlusswiderstand/abschlusswiderstand-75-ohm-innenleben.jpg);
@@ -58,7 +58,7 @@ html, body  {
 	:root { --kabel-abkoppler: 
 		url(../bilder/produkte/kabel-abkoppler/kabel-abkoppler-4.jpg); 
 	}
-}
+} */
 /** -- ENDE Responsive Background-Images -- **/
 
 p {

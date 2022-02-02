@@ -2,57 +2,37 @@
 <html lang="de">
 
 <head>
-  <title>OptimizeAudio.com | HiFi Zubehör: behebt alle Klang-Probleme</title>
+  <title>Produkte | OptimizeAudio.com</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="robots" content="index, follow" />
   <meta name="description"
-    content="OptimizeAudio ist ein Schweizer High-End HiFi Zubehörsystem, dessen Einsatz die Klangqualität einer High-End Hifi Anlage deutlich verbessert. Lösen Sie alle Ihre Klang-Probleme." />
+    content="Überblick zum gesamten Produkte-Zubehör von OptimizeAudio." />
   <meta name="author" content="OptimizeAudio" />
 
-  <link rel="canonical" href="https://www.optimizeaudio.com/" />
+  <link rel="canonical" href="https://www.optimizeaudio.com/produkte.html" />
 
-  <link href="styles/optimize-style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="styles/hero-slider.css">
+  <link rel="stylesheet" href="styles/filter-gallery.css" type="text/css"> <!-- Filter (muss über Main-Style stehen! )-->
+  <link href="styles/optimize-style.css" rel="stylesheet" type="text/css" /> <!-- Main-Style -->
+  <link rel="stylesheet" href="styles/hero-slider.css"> <!-- Für das Hero-Image -->
+  <link rel="stylesheet" href="styles/erfahre-mehr.css"> <!-- Erfahre Mehr Button -->
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:100,300,500"> <!-- Für Formular-->
 
-  <link rel="apple-touch-icon" sizes="180x180" href="bilder/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="bilder/favicon/apple-touch-icon.png"> <!-- Logo as Icons -->
   <link rel="icon" type="image/png" sizes="32x32" href="bilder/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="bilder/favicon/favicon-16x16.png">
-  <meta name='viewport' content="width=device-width, initial-scale=1.0" />
 
   <!-- JS for "Lazy-Loading" the <img>-Elements (it is important to note that I use 'defer', which will only trigger this script AFTER the whole <html>-Element - which is simply the whole content of the page - has been loaded...) -->
   <script defer src="js/lazy-load-img.js"></script>
-
-  <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script><!-- In order to use Fontawesome Icons for free. -->
-
   <!-- 
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$('a[href^="#"').on('click', function (e) {
-				e.preventDefault();
+	-->
 
-				var target = this.hash;
-				var $target = $(target);
+<link rel="preload" href="bilder/produkte/abkoppler-smoothspike-mk4.jpg" as="image">
 
-				//Scroll and show hash
-				$('html, body').animate({
-					'scrollTop': $target.offset().top
-				}, 1000, 'swing');
+  <meta name='viewport' content="width=device-width, initial-scale=1.0" />
 
-				//Scroll and do not show hash
-				$('html, body').animate({
-					'scrollTop': $target.offset().top
-				}, 1000, 'swing');
-			});
-		});
-	</script> 
-  -->
-	<!--for smooth scrolling: you need the above jquery script to implement this -->
 </head>
 
 <body>
@@ -61,467 +41,641 @@
       <label for="drop" class="toggle">&#8801; Menu <span id="logo-phone">OptimizeAudio.com</span></label>
       <input type="checkbox" id="drop" />
       <ul class="menu">
-        <li><a href="index.html" class="thispage">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="klangoptimierung.html">Klangoptimierung</a></li>
-        <li><a href="produkte.html">Produkte</a></li>
-        <li> 
-          <label for="drop-1" class="toggle">Dienstleistungen +</label>
-          <a href="#">Dienstleistungen</a>
-          <input type="checkbox" id="drop-1"/>
-          <ul class="drop-down"> 
-            <li><a href="optimierung-vor-ort.html">Optimierung vor Ort</a></li>	       
-            <li><a href="monatlicher-klang-workshop.html">Monatlicher Workshop</a></li>
-          </ul>
-		    </li>
+        <li><a href="#" class="thispage">Produkte</a></li>
+
+		<li> 
+			<label for="drop-1" class="toggle">Dienstleistungen +</label>
+			<a href="#">Dienstleistungen</a>
+			<input type="checkbox" id="drop-1"/>
+			<ul class="drop-down"> 
+				<li><a href="optimierung-vor-ort.html">Optimierung vor Ort</a></li>	       
+				<li><a href="monatlicher-klang-workshop.html">Monatlicher Workshop</a></li>
+			</ul>
+		</li>
       </ul>
       <span id="logo">OptimizeAudio.com</span>
     </nav>
   </header>
 
+  <div class="showcase-wrapper">
+
+	<div class="showcase-content">
+
+		<div class="showcase black-gradient">
+		  <picture>
+
+			<!-- On every screen our image is 100vw -->
+			<source
+			sizes="100vw" 
+			srcset="bilder/produkte/abkoppler-smoothspike-mk4-375.jpg 375w,
+			bilder/produkte/abkoppler-smoothspike-mk4-600.jpg 600w,
+			bilder/produkte/abkoppler-smoothspike-mk4-786.jpg 786w,
+			bilder/produkte/abkoppler-smoothspike-mk4-1080.jpg 1080w,
+			bilder/produkte/abkoppler-smoothspike-mk4.jpg 1500w" />
   
-
-    <!-- 
-    -->
-
-    <div class="showcase-wrapper">
-
-      <div class="showcase-content">
-
-          <div class="showcase">
-            <picture>
-              <!-- On a screen > 768px our image is 100vw... -->
-              <source
-              media="(min-width: 769px)" 
-              sizes="100vw" 
-              srcset="bilder/home/audiosystem-mit-optimizeaudio-magnifiziert-375.jpg 375w,
-              bilder/home/audiosystem-mit-optimizeaudio-magnifiziert-600.jpg 600w,
-              bilder/home/audiosystem-mit-optimizeaudio-magnifiziert-786.jpg 786w,
-              bilder/home/audiosystem-mit-optimizeaudio-magnifiziert-1080.jpg 1080w,
-              bilder/home/audiosystem-mit-optimizeaudio-magnifiziert-1600.jpg 1600w,
-              bilder/home/audiosystem-mit-optimizeaudio-magnifiziert.jpg 2000w" />
-              
-              <!-- On a screen > 376px and < 769px our image is 100vw... -->
-              <source 
-              media="(min-width: 376px)" 
-              sizes="100vw" 
-              srcset="bilder/home/audiosystem-mit-optimizeaudio-magnifiziert-375.jpg 375w,
-              bilder/home/audiosystem-mit-optimizeaudio-magnifiziert-600.jpg 600w,
-              bilder/home/audiosystem-mit-optimizeaudio-magnifiziert-786.jpg 786w,
-              bilder/home/audiosystem-mit-optimizeaudio-magnifiziert-1080.jpg 1080w" /> <!-- Note: 
-                > The 'srcset'-attribute defines the set of images we will allow the browser to choose between. 
-                > The 'sizes'-attribute indicates what image size would be best to choose. -->
-
-              <!-- Else, on a very small screen <= 376px our image is 100vw -->
-              <source
-              sizes="100vw" 
-              srcset="bilder/home/audiosystem-mit-optimizeaudio-magnifiziert-375.jpg 375w,
-              bilder/home/audiosystem-mit-optimizeaudio-magnifiziert-600.jpg 600w,
-              bilder/home/audiosystem-mit-optimizeaudio-magnifiziert-786.jpg 786w" />
-    
-              <img src="bilder/home/audiosystem-mit-optimizeaudio-magnifiziert-1600.jpg"
-                alt="Ein Audiosystem, das mit dem OptimizeAudio Zubehör sublimiert wurde."
-                class="hero-image" />
-            </picture>
-            <div class="title-on-img">
-              <h1>OptimizeAudio<br>
-                Hifi Zubehör</h1>
-              <a href="#sortiment"><button type="button">Sortiment Entdecken</button></a>
-            </div>
-          </div>
-      
-      </div>
-  </div> 
-
-    <!--
-      <div class="showcase-wrapper">
+			<img src="bilder/produkte/abkoppler-smoothspike-mk4jpg"
+			  alt="OptimizeAudio Produkt-Illustration anhand des Abkoppler-Smoothspike, Modell MK-4."
+			  class="hero-image" />
+		  </picture>
+		  <div class="title-on-img">
+			<h1>OptimizeAudio<br>
+				Produkte</h1>
+			<a href="#sortiment"><button type="button">Sortiment Entdecken</button></a>
+		  </div>
+		</div>
+	
+	</div>
+</div> 
   
-        <div class="showcase-content">
-  
-            <div class="showcase" style="background-image: url(bilder/home/audiosystem-mit-optimizeaudio-magnifiziert.jpg);
-            background-size: cover;
-            background-position: center;">
-              <img src="bilder/home/audiosystem-mit-optimizeaudio-magnifiziert.jpg" alt="Ein Audiosystem, das mit dem OptimizeAudio Zubehör sublimiert wurde." style="display: none;">
-              <h1>OptimizeAudio<br>
-                Hifi Zubehör</h1>
-              <a href="#sortiment"><button type="button">Sortiment Entdecken</button></a>
-            </div>
-        
-        </div>
-    </div>  
-    -->
-
   <!--
-    <div class="grande-image">
-      <div class="grande-image-item">
-        <img src="bilder/home/audiosystem-mit-optimizeaudio-magnifiziert.jpg" width="2000" height="1485"
-          alt="Hochwertige Musikanlage, welche mit OptimizeAudio-Zubehör magnifiziert wurde." />
-        <div class="centered">
-          <h1 class="hero-title">OptimizeAudio <br>Hifi Zubehör</h1>
-          <h2 class="hero-sub-title">Fördert die Klangqualität eines Audiosystem um ein Vielfaches. Löst jedes
-            Klang-Problem.</h2>
-        </div>
-      </div>
-    </div>
+	  <div class="showcase-wrapper">
+  
+		  <div class="showcase-content">
+  
+			  <div class="showcase" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(bilder/produkte/abkoppler-smoothspike-mk4.jpg) center/cover no-repeat;">
+				  <img src="bilder/produkte/abkoppler-smoothspike-mk4.jpg" alt="OptimizeAudio Produkt-Illustration anhand des Abkoppler-Smoothspike, Modell MK-4" style="display: none;">
+				  <h1>OptimizeAudio<br>
+				  Produkte</h1>
+				  <a href="#sortiment"><button type="button">Sortiment Entdecken</button></a>
+			  </div>
+			  
+		  </div>
+	  </div> 
   -->
-
-
+    
     <div class="special">
       <p>Nur ein voll optimiertes Audiosystem wird Ihnen intensive Freude bringen.
         Diese Kunst wird mit Hilfe des OptimizeAudio Zubehörs vollbracht.</p>
     </div>
 
-    <div class="main-container">
-      <article class="article-container">
-        <!--before pseudo article-container-->
-        <div class="flex-wrap">
-          <div class="image-flex"> <!--  
-            style="background-image: url(images/OptimizeAudio%20Verbindungskabel%20Cinch.jpg)"
-          -->
-            <img data-lazy="images/OptimizeAudio%20Verbindungskabel%20Cinch.jpg" alt="OptimizeAudio Verbindungskabel, Modell Cinch"
-            class="flex-background-img lazy">
-          </div>
-          <!--after pseudo image-flex-->
-          <div class="wrap-content">
-            <div class="drin">
-              <div class="drin-content">
-                <h2 class="title-artcle">DENKWEISE</h2>
-                <div class="plain-text">
-                  <p>Musik ist ein fantastisches Medium, um Emotionen zu übertragen. Genauso, wie die
-                    intensive Freude, in einem Sportwagen zu fahren, Laufen, Klettern oder sich einer anderen
-                    Tätigkeit, leidenschaftich hinzugeben. Passion ist es, was uns Menschen vorantreibt. In
-                    einer immer stressigeren Welt, trägt diese Erfahrung zu einer großen Zufriedenheit bei und
-                    führt zu einem intensivem Wohlbefinden, welches uns erlaubt, eine klare Linie zwischen
-                    Arbeits- und Privatleben zu setzen.</p>
-                  <p>Wenn wir Ihnen dieses Gefühl mit Ihrem Audiosystem bringen können, dann haben wir unser Ziel erreicht. Genau für diesen Zweck haben wir das OptimizeAudio Hifi Zubehör erfunden.</p>
-                </div>
-                <!--end plain-text div-->
-              </div>
-              <!--end drin-content div-->
-            </div>
-            <!--end drin div-->
-            <!--after pseudo wrap-content-->
-          </div>
-          <!--end wrap-content div-->
-        </div>
-        <!--end flex-wrap div-->
-      </article>
-      <!--end article-container article-->
-    </div>
-
-    <div class="special">
-      <p>Klangwiedergabe stellt sich als eine pluridisziplinäre Aufgabe heraus. Und genau da,
-        knüpft das OptimizeAudio Konzept an.</p>
-    </div>
-
-    <div class="main-container">
-      <article class="article-container">
-        <!--before pseudo article-container-->
-        <div class="flex-wrap">
-          <div class="image-flex"> <!--  style="background-image:
-            url(bilder/home/optimize-audio-antismog-glasplatte.jpg)" -->
-            <img data-lazy="bilder/home/optimize-audio-antismog-glasplatte.jpg" alt="OptimizeAudio Antismog Glasplatte"
-            class="flex-background-img lazy">
-          </div>
-          <!--after pseudo image-flex-->
-          <div class="wrap-content">
-            <div class="drin">
-              <div class="drin-content">
-                <h2 class="title-artcle">KONZEPT</h2>
-                <div class="plain-text">
-                  <p>Ein Audiosystem - wie der Name schon sagt - sollte als Ganzes betrachtet werden. Es gibt
-                    ganz viele Aspekte, welche den Klang eines Systems beeinflussen können. Stellen Sie sich
-                    zum Beispiel das Design eines Kabels vor. Diese erfordert Antwort auf diverse Fragen,
-                    wie zum Beispiel:</p>
-                  <ul class="no-design">
-                    <li>Querschnitt &amp; Material der Leiter?</li>
-                    <li>Dicke &amp; Material der Isolation?</li>
-                    <li>Dicke &amp; Material der Abschirmung?</li>
-                    <li>Dicke &amp; Material des Mantels?</li>
-                    <li>Verlegung der verschiedenen Schichten?</li>
-                    <li>usw...</li>
-                  </ul>
-                  <p>Diese Überlegungen können nun auf die weiteren Domänen in der Audio, wie Raumakustik,
-                    Lautsprecheraufstellung oder Schwingungen übertragen werden. </p>
-                </div>
-                <!--end plain-text div-->
-              </div>
-              <!--end drin-content div-->
-            </div>
-            <!--end drin div-->
-            <!--after pseudo wrap-content-->
-          </div>
-          <!--end wrap-content div-->
-        </div>
-        <!--end flex-wrap div-->
-
-        <div class="flex-wrap">
-          <div class="image-flex"> <!-- style="background-image:
-            url(bilder/home/optimize-audio-kabel-abkoppler.jpg)" -->
-            <img data-lazy="bilder/home/optimize-audio-kabel-abkoppler.jpg" alt="OptimizeAudio Kabelabkoppler"
-            class="flex-background-img lazy">
-          </div>
-          <!--after pseudo image-flex-->
-          <div class="wrap-content">
-            <div class="drin">
-              <div class="drin-content">
-                <h2 class="title-artcle">Entwicklung der Produkte</h2>
-                <div class="plain-text">
-                  <p>Jedes OptimizeAudio Produkt ist das Ergebnis aus tausenden von praktischen Tests in
-                      Audiosystemen aller Preisklassen.</p>
-
-                  <p>Neben den Tests im Laborraum, wurde das Material über viele Jahre in weiteren 200 Hörräumen bei Kunden geprüft &amp; ständig verbessert.</p>
-
-                  <p>Bei der Entwicklung der OptimizeAudio Produkte hatten pratkische Anwendungen
-                    klar Vorrang auf jegliche (akustische) Theorien.</p>
-
-
-                </div>
-                <!--end plain-text div-->
-              </div>
-              <!--end drin-content div-->
-            </div>
-            <!--end drin div-->
-            <!--after pseudo wrap-content-->
-          </div>
-          <!--end wrap-content div-->
-        </div>
-        <!--end flex-wrap div-->
-
-        <div class="flex-wrap">
-          <div class="image-flex"> <!-- style="background-image:
-            url(images/OptimizeAudio%20Netzfilter%201x4%20Anschluesse.jpg)" -->
-            <img data-lazy="images/OptimizeAudio%20Netzfilter%201x4%20Anschluesse.jpg" alt="OptimizeAudio Netzfilter Anschlüsse"
-            class="flex-background-img lazy">
-          </div>
-          <!--after pseudo image-flex-->
-          <div class="wrap-content">
-            <div class="drin">
-              <div class="drin-content">
-                <h2 class="title-artcle">Absolute Synergie über das gesamte Sortiment</h2>
-                <div class="plain-text">
-                  <p>Keine andere Audiozubehör-Marke der Welt bietet ein so komplettes Produkte-Programm an.
-                    Man kann von Zubehör-<u>System</u> sprechen.</p>
-
-                  <p><em>Genau in diesem Punkt unterscheidet sich OptimizeAudio von allen Konkurrenten am Zubehör-Markt.</em></p>
-
-                  <p>Und weil unsere Produkte immer zusammen entwickelt wurden, herrscht dazwischen absolute Synergie: ein anderer ganz wichtiger Aspekt.</p>
-
-                  <p><em>Ob kleines, mittleres oder grosses Audiosystem, das OptimizeAudio Zubehör wird Ihrer Hifi-Anlage zu neuen Höhenflüge verhelfen.</em></p>
-                </div>
-                <!--end plain-text div-->
-              </div>
-              <!--end drin-content div-->
-            </div>
-            <!--end drin div-->
-            <!--after pseudo wrap-content-->
-          </div>
-          <!--end wrap-content div-->
-        </div>
-        <!--end flex-wrap div-->
-      </article>
-    </div>
-
-
-
-    <div class="special">
-      <p>OptimizeAudio standardisiert die Reproduktion von hochwertigem High-End Klang.<br />
-        In jedem Raum. In jedem Audiosystem.</p>
-    </div>
-
-
-    <div class="main-container">
-      <article class="article-container">
-        <!--before pseudo article-container-->
-        <div class="flex-wrap">
-          <div class="image-flex"> <!-- style="background-image:
-            url(bilder/home/optimize-audio-netzkabel-hybrid.jpg)" -->
-            <img data-lazy="bilder/home/optimize-audio-netzkabel-hybrid.jpg" alt="OptimizeAudio Netzkabel, Modell Hybrid"
-            class="flex-background-img lazy">
-          </div>
-          <!--after pseudo image-flex-->
-          <div class="wrap-content">
-            <div class="drin">
-              <div class="drin-content">
-                <h2 class="title-artcle">Step by Step zur Perfektion</h2>
-                <div class="plain-text">
-                  <p>Beginnen Sie günstig und staunen Sie, wie sich zum Beispiel Ihr Quellengerät mit Antismog-Kleber, Abkoppler, Antiresonatoren oder Schmelzsicherung klanglich enorm verbessert.</p>
-
-                  <p>So bemutigt können Sie dann teurere Produkte (Netzfilter, Kabel, Klangpyramide) risikolos testen
-                    (30 Tage Geldrückgabe-Garantie), und - Step by Step - mit der Zeit sämtliches Zubehör von uns einsetzen. Denn jedes Element wird Sie klanglich weiterbringen. Manchmal viel, manchmal weniger, aber immer werden Sie Fortschritte feststellen können.</p>
-
-                  <p>Von Vergleichen haben wir keine Angst. Unsere zahlbaren Produkte werden ständig der teuersten
-                    Konkurrenz entgegengesetzt. Und gewinnen oft. Als System eingesetzt (alles von OptimizeAudio) sind wir quasi unschlagbar. Und ansonst machen wir uns wieder an die Arbeit.</p>
-
-
-
-                </div>
-                <!--end plain-text div-->
-              </div>
-              <!--end drin-content div-->
-            </div>
-            <!--end drin div-->
-            <!--after pseudo wrap-content-->
-          </div>
-          <!--end wrap-content div-->
-        </div>
-        <!--end flex-wrap div-->
-      </article>
-    </div>
-
-    <div class="special">
-      <p>Testen und beurteilen Sie selbst die Güte der OptimizeAudio-Produkte risikolos, dank dem 30-Tage Rückgaberecht.
-      </p>
-    </div>
-
-  <!-- <section class="products"><a id="sortiment" class="scrollTo"></a>
-        <header class="products-header">
-          <h2 class="products-h1">Kippen Sie den Tisch um, und überholen Sie klanglich deutlich teuereren Anlagen...</h2>
-
-          <p>Musiker & dipl. Ing. Thierry Mayer hat sich mit tausenden von Praxisversuchen über 20 Jahre einzigartige und
-            bahnbrechende neue Kenntnisse in Sachen Strom, Schwingungen, Akustik und Elektrosmog geschaffen. Mit diesem
-            gewonnen Know-how entstand das "OptimizeAudio"-Zubehörsystem. Richtig eingesetzt kann man damit alle möglichen
-            Klang-Probleme lösen.</p>
-        </header>
-    <div class="gallery-container">
-    
-    <div class="gallery-container">
-      <div class="gallery-collect">
-
-        <div class="gallery-main-grid-container">
-
-          <div class="card-container all">
-            <a href="klangoptimierung.html">
-              <div class="card-img">
-                <img src="bilder/home/thierry-mayer.jpg" alt="Einzigartigkeit des OptimizeAudio Zubehörs."
-                class="card-image-two-cat card-home">
-              </div>
-              <div class="card-content">
-                <h2>Einzigartigkeit</h2>
-                <p class="mehr-info">Hier erklären wir, was das OptimizeAudio Zubehörsystem so speziell macht.</p>
-              </div>
+	<section class="mehr-wrap" id="erfahre-mehr">
+        <button class="accordion-utopia"><a href="#erfahre-mehr" class="mehr-button">Mehr erfahren
+                <span class="arrow-down">&#709;</span>
+                <span class="arrow-up">&#708;</span>
             </a>
-          </div>
+        </button>
+        <div class="hidden-container">
 
-          <div class="card-container all">
-            <a href="monatlicher-klang-workshop.html">
-              <div class="card-img">
-                <img src="bilder/home/optimizeaudio-klangworkshop.jpg" alt="Einladung zum OptimizeAudio Workshop."
-                class="card-image-two-cat card-home">
-              </div>
-              <div class="card-content">  
-                <h2>High-End Klang Workshop</h2>
-                <p class="mehr-info">Lernen Sie, in einer Stunde, wie Sie deutlich mehr aus Ihrer Anlage holen können.</p>
-              </div>
-            </a>
-          </div>
+			<div class="main-container">
+			<article class="article-container">
+				<!--before pseudo article-container-->
+				<div class="flex-wrap">
+				<div class="image-flex"> <!--  style="background-image:
+					url(bilder/produkte/optimize-audio-verbindungskabel-hybrid-cinch-dig.jpg)"-->
+					<img data-lazy="bilder/produkte/optimize-audio-verbindungskabel-hybrid-cinch-dig.jpg" alt="OptimizeAudio hybrides Verbindungskabel, Modell Cinch"
+					class="flex-background-img lazy">
+				</div>
+				<!--after pseudo image-flex-->
+				<div class="wrap-content">
+					<div class="drin">
+					<div class="drin-content">
+						<h2 class="title-article">Einsatzfälle</h2>
+						<h3 class="sub-title">Welche Klang-Probleme beheben OptimizeAudio Produkte?</h3>
+						<div class="plain-text">
 
+							<p>
+								Es gibt sehr viele mögliche Gründe, welche zu Klang-Problemen führen können. Einige Fälle sind jedoch problematischer, weil diese die Wiedergabequalität einer High-End Anlage stärker reduzieren. 
+							</p>
 
-          <div class="card-container all">
-            <a href="optimierung-vor-ort.html">
-              <div class="card-img">
-                <img src="bilder/home/optimizeaudio-klangoptimierung-vor-ort.jpg" alt="OptimizeAudio: wir optimieren Ihre High-End Anlage vor Ort."
-                class="card-image-two-cat card-home">
-              </div>
-              <div class="card-content">
-                <h2>Optimierung vor Ort</h2>
-                <p class="mehr-info">Wir demonstriere Ihnen kostenlos, vor Ort, wie das OptimizeAudio-Zubehör Hifi System verbessert.</p>
-              </div> 
-            </a>
-          </div> 
+							<p>
+								Typischerweise eignet sich das OptimizeAudio Zubehör für folgende Fälle:
+							</p>
 
-        </div>
-      </div>
-    </div>
-    </div>
-  </section> -->
-
-    <section class="first">
-      <h2 class="title-article">Kippen Sie den Tisch um, und überholen Sie klanglich deutlich teuereren Anlage...</h2>
-
-      <p>Musiker & dipl. Ing. Thierry Mayer hat sich mit tausenden von Praxisversuchen über 20 Jahre einzigartige und
-        bahnbrechende neue Kenntnisse in Sachen Strom, Schwingungen, Akustik und Elektrosmog geschaffen. Mit diesem
-        gewonnen Know-how entstand das "OptimizeAudio"-Zubehörsystem. Richtig eingesetzt kann man damit alle möglichen
-        Klang-Probleme lösen.</p>
-
-      <div class="wrap-three">
-        <div class="responsive responsive-first">
-          <div class="gallery"><a href="klangoptimierung.html">
-
-              <img data-lazy="bilder/home/thierry-mayer.jpg" width="700" height="466"
-                alt="Foto Thierry Mayer mit Focal Grande Utopia"
-                class="lazy" />
-
-              <div class="descr">
-                <h2>Einzigartigkeit</h2>
-                <p>In diesem Artikel erklären wir Ihnen, was das OptimizeAudio Zubehörsystem so speziell macht.</p>
-              </div>
-            </a>
-          </div>
-        </div>
+							<ul>
+								<li>Wenn der Baß im Raum über zu wenig kraft verfügt und der Eindruck erweckt wird: "Ist das alles, was der Lautsprecher im Baß kann"?</li>
+								<li>Wenn das 3-dimensionale Klangbild zu wenig Tiefe aufweist und Sie das Gefühl haben: "D</li>
+								<li>Wenn das Medium &amp; der Hochtöner zu schrill </li>
+								<li></li>
+								<li></li>
+							</ul>
 
 
+						</div>
+						<!--end plain-text div-->
+					</div>
+					<!--end drin-content div-->
+					</div>
+					<!--end drin div-->
+					<!--after pseudo wrap-content-->
+				</div>
+				<!--end wrap-content div-->
+				</div>
+				<!--end flex-wrap div-->
 
 
+				<div class="flex-wrap">
+				<div class="image-flex"> <!--  style="background-image:
+					url(bilder/produkte/optimize-audio-kabel-abkoppler.jpg)" -->
+					<img data-lazy="bilder/produkte/optimize-audio-kabel-abkoppler.jpg" alt="OptimizeAudio Kabel-Abkoppler"
+					class="flex-background-img lazy">
+
+				</div>
+				<!--after pseudo image-flex-->
+				<div class="wrap-content">
+					<div class="drin">
+					<div class="drin-content">
+						<h2 class="title-article">Wo soll ich beginnen?</h2>
+						<div class="plain-text">
+						<p>
+							Nicht jedes OptimizeAudio Produkt wird zu gleichwertigen Verbesserungen in der Klangqualität Ihres High-End Systems führen. Der Umfang der Verbesserung hängt insbesondere von den spezifischen Klang-Problemen ab, die Sie in Ihrem Raum begegnen.
+						</p>
+
+						<!--
+							Es ist nicht notwendigerweise so, dass das teuerste Hifi Zubehör in unserem Sortiment - vereinzelt eingesetzt - zum besten Ergebnis führt.
+						-->
+
+						<p>
+							Wir empfehlen deshalb einen 3-stufigen Maßstab:
+						</p>
+
+						<ul>
+							<li><u><strong>Beginner</strong></u>: Beginnen Sie günstig und beheben Sie die am häufigsten auftretenden Klang-Probleme. Hierbei handelt es sich um dienigen Produkte, welche die bestmöglichen Klang-Resultate bringen, in Relation, zu was sie kosten.</li>
+							<li><u><strong>Fortgeschritten</strong></u>: Obschon diese Kategorie - von der Preis-Leistung her - weniger spektakuläre Ergebnisse herbeiführt, profitieren Sie auch hier von signifikanten Fortschritten bei der Klangqualität.</li>
+							<li><u><strong>Experte</strong></u>: Diese OptimizeAudio Produkte sind gedacht, um den letzten Feinschliff für eine ultimative Musikwiedergabe zu erbringen.</li>
+						</ul>
+
+						<p><em>
+							Um Ihnen einen besseren Überblick zu verschaffen, wurde dieser Maßstab auf unser Sortiment angewendet (siehe unten). So wird das erhebliche Klang-Potential, welches in Ihrer High-End Anlage noch schlummert - Step by Step - offenbart.
+						</em></p>
 
 
-        <div class="responsive">
-          <div class="gallery"><a href="monatlicher-klang-workshop.html">
-              <img data-lazy="bilder/home/optimizeaudio-klangworkshop.jpg" width="1500" height="996"
-                alt="OptimizeAudio Klangworkshop"
-                class="lazy" />
-              <div class="descr">
-                <h2>High-End Klang Workshop</h2>
-                <p>Lernen Sie, in einer Stunde, wie Sie deutlich mehr aus Ihrer Anlage holen können.</p>
-              </div>
-            </a>
-          </div>
-        </div>
+						</div>
+						<!--end plain-text div-->
+					</div>
+					<!--end drin-content div-->
+					</div>
+					<!--end drin div-->
+					<!--after pseudo wrap-content-->
+				</div>
+				<!--end wrap-content div-->
+				</div>
+				<!--end flex-wrap div-->
+
+				<div class="flex-wrap">
+					<div class="image-flex"> <!-- style="background-image:
+						url(bilder/produkte/optimize-audio-kabel-abkoppler.jpg)" -->
+						<img data-lazy="bilder/produkte/optimize-audio-kabel-abkoppler.jpg" alt="OptimizeAudio Kabel-Abkoppler"
+					class="flex-background-img lazy">
+					</div>
+					<!--after pseudo image-flex-->
+					<div class="wrap-content">
+						<div class="drin">
+						<div class="drin-content">
+							<h2 class="title-article">Bedingung für bestes Resultat?</h2>
+							<div class="plain-text news">
+
+								<p>
+									Anhand etlicher empirischer Hörtests sind wir zum Schluss gekommen, dass die Optimierung einer High-End Anlage als <u>System</u> angegangen werden muss. Deshalb spezialisiert sich OptimizeAudio nicht auf ein spezifisches Zubehör - wie zum Beispiel ein High-End Kabel - sondern entwickelt &amp; testet die Produkte stets zusammen, als ein Ganzes. Dies ermöglicht unseren Kunden, von Synergieeffekten beim gemeinsamen Einsatz der OptimizeAudio Produkten in Ihrem Audiosystem zu profitieren. 
+								</p>
+
+								<p><em>
+									Grundsätzlich gilt deshalb die Regel, dass - je mehr OptimizeAudio Produkte in Ihrem System interagieren - desto näher sollte sich die Musikqualität an der Originalaufnahme nähern. Entsprechend wird die maximale Klangqualität erreicht, wenn Ihr High-End System komplett mit Produkten von OptimizeAudio ausgestattet ist.
+								</em></p>
+
+								<p>
+									Wenn Ihnen diese Erklärungen zu vaage erscheinen, dann empfehlen wir Ihnen <a href="klangoptimierung.html" target="_blank">unseren Artikel zur Klangoptimierung</a>, welcher den Ursprung &amp; die Einzigartigkeit der OptimizeAudio Produkte deutlich gründlicher erkundet.
+								</p>
+	
+	
+							</div>
+							<!--end plain-text div-->
+						</div>
+						<!--end drin-content div-->
+						</div>
+						<!--end drin div-->
+						<!--after pseudo wrap-content-->
+					</div>
+					<!--end wrap-content div-->
+					</div>
+					<!--end flex-wrap div-->
+
+					<div class="flex-wrap">
+						<div class="image-flex"> <!-- style="background-image:
+							url(bilder/produkte/optimize-audio-kabel-abkoppler.jpg)" -->
+							<img data-lazy="bilder/produkte/optimize-audio-kabel-abkoppler.jpg" alt="OptimizeAudio Kabel-Abkoppler"
+					class="flex-background-img lazy">
+						</div>
+						<!--after pseudo image-flex-->
+						<div class="wrap-content">
+							<div class="drin">
+							<div class="drin-content">
+								<h2 class="title-article">OptimizeAudio Produkte VS. Konkurrenz</h2>
+								<div class="plain-text">
+								<p>Jedes OptimizeAudio Produkt ist das Ergebnis aus tausenden von praktischen Tests in
+									Audiosystemen aller Preisklassen.</p>
+		
+								<p>Neben den Tests im Laborraum, wurde das Material über viele Jahre in weiteren 200 Hörräumen bei Kunden geprüft &amp; ständig verbessert.</p>
+		
+								<p>Bei der Entwicklung der OptimizeAudio Produkte hatten pratkische Anwendungen
+									klar Vorrang auf jegliche (akustische) Theorien.</p>
+		
+		
+								</div>
+								<!--end plain-text div-->
+							</div>
+							<!--end drin-content div-->
+							</div>
+							<!--end drin div-->
+							<!--after pseudo wrap-content-->
+						</div>
+						<!--end wrap-content div-->
+						</div>
+						<!--end flex-wrap div-->
 
 
+			</article>
+			<!--end article-container article-->
+			</div>
+		</div> <!--end hidden-container-->
+	</section>
 
-        <div class="responsive">
-          <div class="gallery"><a href="optimierung-vor-ort.html">
-              <img data-lazy="bilder/home/optimizeaudio-klangoptimierung-vor-ort.jpg" width="1500" height="1125"
-                alt="OptimizeAudio Optimierung vor Ort"
-                class="lazy" />
-              <div class="descr">
-                <h2>Optimierung vor Ort</h2>
-                <p>Wir demonstriere Ihnen kostenlos, wie das OptimizeAudio Ihr System verbessert.</p>
-              </div>
-            </a>
-          </div>
-        </div>
+    <section class="products"><a id="sortiment" class="scrollTo"></a>
+		<header class="products-header">
+			<h2 class="products-h1">Weiteres OptimizeAudio Klangop&shy;ti&shy;mie&shy;rungs-Zubehör</h2>
+		</header>
+
+		<div class="gallery-container">
+
+			<div class="category-head">
+				<ul>
+					<div class="category-title active" id="all">
+						<li>Alle</li>
+						<span></span>
+					</div>
+					<div class="category-title" id="vibration">
+						<li>Vibrationen</li>
+						<span></span>
+					</div>
+					<div class="category-title" id="strom">
+						<li>Strom</li>
+						<span></span>
+					</div>
+					<div class="category-title" id="antismog">
+						<li>Antismog</li>
+						<span></span>
+					</div>
+					<div class="category-title" id="akustik">
+						<li>Raum-Akustik</li>
+						<span></span>
+					</div>
+					<div class="category-title" id="einsteiger">
+						<li>Einsteiger</li>
+						<span></span>
+					</div>   
+					<div class="category-title" id="fortgeschritten">
+						<li>Fortgeschritten</li>
+						<span></span>
+					</div>  
+					<div class="category-title" id="experte">
+						<li>Experte</li>
+						<span></span>
+					</div> 
+				</ul>
+			</div>
+		
+		<div class="gallery-container">
+			<div class="gallery-collect">
+
+				<div class="gallery-main-grid-container">
+
+					<div class="card-container vibration einsteiger all">
+						<a href="abkoppler-geraetschaften.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/abkoppler/abkoppler-transaperent-bg.jpg" alt="OptimizeAudio Smoothspike Abkoppler für Geräte, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Vibrationen</span>
+								<span class="second-category">Einsteiger</span>
+								<span class="card-preis">CHF / Stk. 50</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Abkoppler Gerätschaften</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container vibration experte all">
+						<a href="abkoppler-kabel.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/kabelheber/kabelheber-transparenter-bg.jpg" alt="OptimizeAudio Abkoppler für Kabel, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Vibrationen</span>
+								<span class="second-category">Experte</span>
+								<span class="card-preis">CHF / Stk. 99</span>
+							</div>
+							<div class="card-content">  
+								<p class="pseudo-title">Abkoppler Kabel</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>
+						</a>
+					</div> <!-- End of one Card -->
 
 
+					<div class="card-container strom fortgeschritten all">
+						<a href="abschlusswiderstand-75-ohm-110-ohm.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/abschlusswiderstand/abschlusswiderstand-transparenter-bg.jpg" alt="OptimizeAudio Abschlusswiderstand, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Strom</span>
+								<span class="second-category">Fortgeschritten</span>
+								<span class="card-preis">CHF / Stk. 60</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Abschlusswiderstand</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div> 
+						</a>
+					</div> <!-- End of one Card -->
 
 
+					<div class="card-container vibration einsteiger all">
+						<a href="antiresonatoren-an-geraete.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/antiresonatoren/antiresonator-transparenter-bg.jpg" alt="OptimizeAudio Antiresonatoren für Geräte, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Vibrationen</span>
+								<span class="second-category">Einsteiger</span>
+								<span class="card-preis">CHF 75-125 <br>pro Gerät</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Antiresonatoren Geräte</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>
+						</a>
+					</div> <!-- End of one Card -->
 
-      </div>
-      </div>
-    </section>
+					<div class="card-container vibration experte all">
+						<a href="antiresonatoren-an-lautsprecher.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/antiresonatoren/antiresonator-transparenter-bg.jpg" alt="OptimizeAudio Antiresonatoren für Lautsprecher, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Vibrationen</span>
+								<span class="second-category">Experte</span>
+								<span class="card-preis">ab CHF 300 <br> pro Lautsprecher</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Antiresonatoren Lautsprecher</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>
+						</a>
+					</div> <!-- End of one Card -->
+
+
+					<div class="card-container vibration fortgeschritten all">
+						<a href="antiresonatoren-in-raum.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/antiresonatoren/antiresonator-transparenter-bg.jpg" alt="OptimizeAudio Antiresonatoren für den Raum, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Vibrationen</span>
+								<span class="second-category">Fortgeschritten</span>
+								<span class="card-preis">CHF / Stk. 25 </span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Antiresonatoren Raum</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container antismog experte all">
+						<a href="antismog-glas.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/abkoppler/abkoppler-transaperent-bg.jpg" alt="OptimizeAudio Antismog Glas, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Antismog</span>
+								<span class="second-category">Experte</span>
+								<span class="card-preis">CHF / Stk. 149 </span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Antismog Glas</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div> 
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container antismog fortgeschritten all">
+						<a href="antismog-kleber-an-geraete.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/abkoppler/abkoppler-transaperent-bg.jpg" alt="OptimizeAudio Antismog-Kleber für Geräte, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Antismog</span>
+								<span class="second-category">Fortgeschritten</span>
+								<span class="card-preis">ab CHF 50 <br> pro Gerät</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Antismog-Kleber Geräte</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>  
+						</a>
+					</div> <!-- End of one Card -->
+
+
+					<div class="card-container antismog einsteiger all">
+						<a href="antismog-kleber-an-lautsprecher.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/abkoppler/abkoppler-transaperent-bg.jpg" alt="OptimizeAudio Antismog-Kleber für Lautsprecher, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Antismog</span>
+								<span class="second-category">Einsteiger</span>
+								<span class="card-preis">ab CHF 300 <br> pro Lautsprecher</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Antismog-Kleber Lautsprecher</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>  
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container strom experte all">
+						<a href="internet-kit.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/ethernetkit/internetkit-transparenter-bg.jpg" alt="OptimizeAudio Internet-KIT, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Strom</span>
+								<span class="second-category">Experte</span>
+								<span class="card-preis">CHF / Stk. 2'490</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Internet-KIT</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div> 
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container akustik experte all">
+						<a href="klangpyramide.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/klangpyramide/klangpyramide-transparenter-bg.jpg" alt="OptimizeAudio Klangpyramide, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Raumakustik</span>
+								<span class="second-category">Experte</span>
+								<span class="card-preis">CHF / Stk. 1'890</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Klangpyramide</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>  
+						</a>
+					</div> <!-- End of one Card -->
+
+
+					<div class="card-container strom experte all">
+						<a href="lautsprecherkabel.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/lautsprecherkabel/lautsprecherkabel-transparenter-bg.jpg" alt="OptimizeAudio Lautsprecherkabel, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Strom</span>
+								<span class="second-category">Experte</span>
+								<span class="card-preis">ab CHF 800</span>
+							</div>
+							<div class="card-content">  
+								<p class="pseudo-title">Lautsprecher-Kabel</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>  
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container strom experte all">
+						<a href="netzfilter.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/netzfilter/netzfilter-transparenter-bg.jpg" alt="OptimizeAudio Netzfilter, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Strom</span>
+								<span class="second-category">Experte</span>
+								<span class="card-preis">CHF / Stk. 850</span>
+							</div>
+							<div class="card-content">  
+								<p class="pseudo-title">Netzfilter</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container strom fortgeschritten all">
+						<a href="netzkabel.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/netzkabel/netzkabel-transparenter-bg.jpg" alt="OptimizeAudio Netzkabel, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Strom</span>
+								<span class="second-category">Fortgeschritten</span>
+								<span class="card-preis">ab CHF 350</span>
+							</div>
+							<div class="card-content"> 
+								<p class="pseudo-title">Netzkabel</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>
+						</a>
+					</div> <!-- End of one Card -->
+
+
+					<div class="card-container strom fortgeschritten all">
+						<a href="netzleiste.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/netzfilter/netzfilter-transparenter-bg.jpg" alt="OptimizeAudio Netzleiste, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Strom</span>
+								<span class="second-category">Fortgeschritten</span>
+								<span class="card-preis">ab CHF 750</span>
+							</div>
+							<div class="card-content"> 
+								<p class="pseudo-title">Netzleiste</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>  
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container antismog fortgeschritten all">
+						<a href="netzstecker-antismog.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/netzstecker/netzstecker-transparenter-bg.jpg" alt="OptimizeAudio Netzstecker Antismog, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Antismog</span>
+								<span class="second-category">Fortgeschritten</span>
+								<span class="card-preis">CHF 149</span>
+							</div>
+							<div class="card-content">
+								<p class="pseudo-title">Netzstecker Antismog</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>   
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container strom fortgeschritten all">
+						<a href="audiophile-schmelzsicherung.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/schmelzsicherung/schmelzsicherung-transparenter-bg.jpg" alt="OptimizeAudio audiophile Schmelzsicherung, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Strom</span>
+								<span class="second-category">Fortgeschritten</span>
+								<span class="card-preis">CHF / Stk. 40</span>
+							</div>
+							<div class="card-content"> 
+								<p class="pseudo-title">Schmelzsicherung</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>  
+						</a>
+					</div> <!-- End of one Card -->
+
+
+					<div class="card-container strom fortgeschritten all">
+						<a href="verbindungskabel.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/verbindungskabel/verbindungskabel-transparenter-bg.jpg" alt="OptimizeAudio Verbindungs-Kabel, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Strom</span>
+								<span class="second-category">Fortgeschritten</span>
+								<span class="card-preis">ab CHF 400</span>
+							</div>
+							<div class="card-content">   
+								<p class="pseudo-title">Verbindungs-Kabel</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div>
+						</a>
+					</div> <!-- End of one Card -->
+
+					<div class="card-container strom fortgeschritten all">
+						<a href="zobelglied.html">
+							<div class="card-img">
+								<img data-lazy="bilder/preise/zobelglied/zobelglied-transparenter-bg.jpg" alt="OptimizeAudio Zobelglied, Preis in CHF."
+								class="card-image-two-cat lazy">
+								<span class="card-category">Strom</span>
+								<span class="second-category">Fortgeschritten</span>
+								<span class="card-preis">CHF 1'150</span>
+							</div>
+							<div class="card-content"> 
+								<p class="pseudo-title">Zobelglied</p>
+								<p class="mehr-info">Klick für mehr Informationen</p>
+							</div> 
+						</a>
+					</div> <!-- End of one Card -->
+
+				</div><!-- End of the Grid-Container -->
+	</section>
 
   
 
   <!---------------Beginn Footer---------------------------------->
-  <footer class="footer">
+	<footer class="footer">
 
 		<div class="adresseWrap">
 			<div class="adresseUn">
 
 				<h2>Kontakt</h2>
-				<p><i class="fas fa-map-marker-alt"></i> Seestrasse 247, 8713 Uerikon</p>
-				<p><i class="fas fa-envelope"></i> thierry.mayer@gmx.ch</p>
-				<p><i class="fas fa-phone"></i><span class="blue"> 044 796 23 90</span> oder <span class="blue">078 631 62 06</span>
+				<p>Adresse: Seestrasse 247, 8713 Uerikon</p>
+				<p>Email: thierry.mayer@gmx.ch</p>
+				<p>Telefon: <span class="blue">044 796 23 90</span> oder Natel: <span class="blue">078 631 62 06</span>
 				</p>
 
 				<br />
 
-				<h2><i class="far fa-clock"></i> Öffnungszeiten</h2>
+				<h2>Öffnungszeiten</h2>
 				<p>Dienstag bis Samstag 14:00-18:00 (oder auf Vereinbarung).</p>
 
 				<br />
 
-				<h2><i class="fas fa-parking"></i> Parkplatz</h2>
+				<h2>Parkplatz</h2>
 				<p>Falls der Platz vor unserer Tür besetzt ist, parkieren Sie bitte beim Bahnhof-Parkplatz Uerikon,
 					Stationsstrasse 5, 8713 Uerikon (ca. 4 min. zu Fuss von uns entfernt). Nutzen Sie den Fussweg
 					unterhalb der
@@ -566,15 +720,16 @@
 			  <div class="nav-item"><a href="impressum.html">Impressum</a></div>
 			  <div class="nav-item"><a href="datenschutz.html">Datenschutz</a></div>
 		 	 </div>
-		</div>
+		</div> 
 
 	</footer>
+	<!-------------Ende Footer---------------------------->
 
-  <!--
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> 
-  -->
-  <!-- Use GSAP via CDN-Caching -->
-  <!-- Put any scripts using GSAP here-->
+<!-- JS file for category-filter -->
+<script src = "js/filter.js"></script>
+
+<!-- JS for "Erfahre mehr"-Button -->
+<script src="js/erfahre-mehr.js"></script>
+
 </body>
-
 </html>
